@@ -1,0 +1,50 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+}
+body {
+    background: #ffffff;
+}
+
+
+:root {
+    --primary-color : #FFAE4F;
+
+    /* all colors */
+    --fit-orange-light: #FFAE4F;
+    --fit-orange-dark: #FF5A00;
+    --eco-green-light: #C2FFA7;
+    --eco-green-dark: #5FA281;
+    --cool-blue-light: #89E1EE;
+    --cool-blue-dark: #2A727E;
+    --humble-red-light: #FF7979;
+    --humble-red-dark: #FF1C1C;
+    --sweet-purple-light: #C0A7F4;
+    --sweet-purple-dark: #59408D;
+    --power-black-light: #747474;
+    --power-black-dark: #3E3E3E;
+
+    /* start end colors */
+    --fit-orange-start: #FF5A00;
+    --fit-orange-end: #FFAE4F;
+    --eco-green-end: #C2FFA7;
+    --eco-green-start: #5FA281;
+    --cool-blue-end: #89E1EE;
+    --cool-blue-start: #2A727E;
+    --humble-red-end: #FF7979;
+    --humble-red-start: #FF1C1C;
+    --sweet-purple-end: #C0A7F4;
+    --sweet-purple-start: #59408D;
+    --power-black-end: #747474;
+    --power-black-start: #3E3E3E;
+
+    --p-font-color: ;
+    --h1-font-color: ;
+    --h2-font-color: ;
+    --h3-font-color: ;
+    --h4-font-color: ;
+    --h5-font-color: ;
+    --h6-font-color: ;
+
+}

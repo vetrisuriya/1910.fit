@@ -1,0 +1,21 @@
+section.section8 {
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+section.section8 footer .footer-nav h6 a {
+    color: var(--power-black-dark);
+    text-transform: capitalize;
+}
+section.section8 footer .footer-social-nav a {
+    cursor: pointer;
+    display: inline-block;
+    color: var(--power-black-dark);
+}
+section.section8 footer div.row {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}

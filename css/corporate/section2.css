@@ -1,0 +1,625 @@
+/* //////////////////////////////////// section 2 ///////////////////////////////////////// */
+
+section.section2 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background: white;
+    height: var(--section2);
+    overflow: hidden;
+    position: relative;
+}
+section.section2 > .row {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.section2 {
+        height: var(--section2-576);
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section.section2 {
+        height: var(--section2-768);
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section.section2 {
+        height: var(--section2-992);
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section.section2 {
+        height: var(--section2-1200);
+    }
+}
+
+
+section.section2 .parent-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+
+/* section2 main container1 */
+section.section2 .section2-main-container1 {
+    width: 100%;
+    height: 28%;
+    margin: 0% auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+}
+section.section2 .section2-main-container1 .inner .inner-container1 {
+    height: 12%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
+    font-size: 120%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+section.section2 .section2-main-container1 .inner .inner-container2 {
+    width: 100%;
+    height: 88%;
+    padding: 0px;
+    margin: 0px;
+}
+section.section2 .section2-main-container1 .inner .inner-container2 .inner {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner .inner-container2 .inner > div.row {
+    width: 100%;
+    margin: 0px auto;
+}
+section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
+    font-size: 90%;
+    color: var(--power-black-dark);
+}
+section.section2 .section2-main-container1 .circle {
+    padding: 13px 20px;
+    border-radius: 50%;
+    background-color: var(--fit-orange-light);
+    color: #fff;
+    max-height: 50px;
+    z-index: 2;
+}
+section.section2 .section2-main-container1 .how-it-works.row .col-2 {
+    align-self: stretch;
+}
+section.section2 .section2-main-container1 .how-it-works.row .col-2::after {
+    content: "";
+    position: absolute;
+    border-left: 3px solid var(--fit-orange-light);
+    z-index: 1;
+}
+section.section2 .section2-main-container1 .how-it-works.row .col-2.bottom::after {
+    height: 50%;
+    left: 50%;
+    top: 50%;
+}
+section.section2 .section2-main-container1 .how-it-works.row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+}
+section.section2 .section2-main-container1 .how-it-works.row .col-2.top::after {
+    height: 50%;
+    left: 50%;
+    top: 0;
+}
+section.section2 .section2-main-container1 .timeline div {
+    padding: 0;
+    height: 40px;
+}
+section.section2 .section2-main-container1 .timeline hr {
+    border-top: 3px solid var(--fit-orange-light);
+    margin: 0;
+    top: 17px;
+    position: relative;
+}
+section.section2 .section2-main-container1 .timeline .col-2 {
+    display: flex;
+    overflow: hidden;
+}
+section.section2 .section2-main-container1 .timeline .corner {
+    border: 3px solid var(--fit-orange-light);
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+section.section2 .section2-main-container1 .timeline .top-right {
+    left: 50%;
+    top: -50%;
+}
+section.section2 .section2-main-container1 .timeline .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+}
+section.section2 .section2-main-container1 .timeline .top-left {
+    left: -50%;
+    top: -50%;
+}
+section.section2 .section2-main-container1 .timeline .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.section2 .section2-main-container1 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container1 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 > h3 {
+        font-size: 150%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
+        font-size: 100%;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section.section2 .section2-main-container1 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container1 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
+        font-size: 160%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
+        font-size: 106%;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section.section2 .section2-main-container1 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container1 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
+        font-size: 170%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
+        font-size: 110%;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section.section2 .section2-main-container1 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container1 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
+        font-size: 180%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
+        font-size: 110%;
+    }
+}
+
+
+
+/* ///////////////////////////////////// section2 main container2 /////////////////////////////////////// */
+section.section2 .section2-main-container2 {
+    width: 100%;
+    height: 28%;
+    margin: 0% auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container2 .inner {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container2 .inner .inner-container1 {
+    height: 12%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
+    font-size: 130%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 {
+    width: 100%;
+    height: 88%;
+    padding: 0px;
+    margin: 0px;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .tab_container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .tab_container input, section.section2 .section2-main-container2 .inner .inner-container2 .tab_container section {
+    clear: both;
+    padding-top: 5px;
+    display: none;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 50%;
+    color: #757575;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background: #dcd9d9;
+    margin-bottom: unset;
+    height: 10%;
+    position: relative;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 90%;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .tab_container #tab1:checked ~ #content1,
+section.section2 .section2-main-container2 .inner .inner-container2 .tab_container #tab2:checked ~ #content2 {
+    display: block;
+    height: calc(calc(100% - 10%) - 5px);
+    /* padding: 20px; */
+    /* background: var(--power-black-dark); */
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .tab_container [id^="tab"]:checked + label {
+    background: #fff;
+    box-shadow: inset 0 3px var(--fit-orange-dark);
+}
+
+[data-state="Good"] {
+    --duration: 800ms;
+    --delay: 100ms;
+    --color: #E7EEF8;
+    --faded-color: rgba(172, 196, 231, 0.3);
+}
+section.section2 .section2-main-container2 #app {
+    width: 100%;
+    height: 100%;
+}
+section.section2 .section2-main-container2 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+section.section2 .section2-main-container2 li {
+    padding: 5px 10px;
+    background-color: #ffae4f;
+    margin-bottom: .1rem;
+    -webkit-animation: enter var(--duration) cubic-bezier(0.5, 0, 0.2, 1) both;
+            animation: enter var(--duration) cubic-bezier(0.5, 0, 0.2, 1) both;
+}
+section.section2 .section2-main-container2 #app.list1 ul li {
+    height: calc(calc(100% / 7) - .1rem);
+    position: relative;
+}
+section.section2 .section2-main-container2 #app.list2 ul li {
+    height: calc(calc(100% / 5) - .1rem);
+    position: relative;
+}
+section.section2 .section2-main-container2 li:last-child {
+    margin-bottom: 0;
+}
+section.section2 .section2-main-container2 li:nth-child(1) {
+    -webkit-animation-delay: calc(1 * var(--delay));
+            animation-delay: calc(1 * var(--delay));
+}
+section.section2 .section2-main-container2 li:nth-child(2) {
+    -webkit-animation-delay: calc(2 * var(--delay));
+            animation-delay: calc(2 * var(--delay));
+}
+section.section2 .section2-main-container2 li:nth-child(3) {
+    -webkit-animation-delay: calc(3 * var(--delay));
+            animation-delay: calc(3 * var(--delay));
+}
+section.section2 .section2-main-container2 li:nth-child(4) {
+    -webkit-animation-delay: calc(4 * var(--delay));
+            animation-delay: calc(4 * var(--delay));
+}
+section.section2 .section2-main-container2 li:nth-child(5) {
+    -webkit-animation-delay: calc(5 * var(--delay));
+            animation-delay: calc(5 * var(--delay));
+}
+section.section2 .section2-main-container2 li:nth-child(6) {
+    -webkit-animation-delay: calc(6 * var(--delay));
+            animation-delay: calc(6 * var(--delay));
+}
+section.section2 .section2-main-container2 li:nth-child(7) {
+    -webkit-animation-delay: calc(7 * var(--delay));
+            animation-delay: calc(7 * var(--delay));
+}
+section.section2 .section2-main-container2 li .title {
+    color: var(--power-black-dark);
+    font-size: 86%;
+    width: calc(100% - 20px);
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+@-webkit-keyframes enter {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7);
+    }
+}
+@keyframes enter {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7);
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.section2 .section2-main-container2 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
+        font-size: 150%;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section.section2 .section2-main-container2 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
+        font-size: 160%;
+    }
+    section.section2 .section2-main-container2 li .title {
+        font-size: 100%;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section.section2 .section2-main-container2 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
+        font-size: 170%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label span {
+        font-size: 108%;
+    }
+    section.section2 .section2-main-container2 li .title {
+        font-size: 104%;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section.section2 .section2-main-container2 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
+        font-size: 180%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label span {
+        font-size: 116%;
+    }
+    section.section2 .section2-main-container2 li .title {
+        font-size: 110%;
+    }
+}
+
+
+
+/* ///////////////////////////////////// section2 main container3 /////////////////////////////////////// */
+section.section2 .section2-main-container3 {
+    width: 100%;
+    height: 44%;
+    margin: 0% auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container3 .inner {
+    height: 100%;
+    width: 100%;
+}
+section.section2 .section2-main-container3 .inner .inner-container1 {
+    height: 8%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
+    font-size: 130%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 {
+    width: 100%;
+    height: 92%;
+    margin: 0px;
+    /* background: #ffae4f; */
+    /* padding: 20px; */
+}
+section.section2 .section2-main-container3 .inner .inner-container2 div.container {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px auto;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 div.container form {
+    width: 100%;
+    height: 100%;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 div.container form div.row {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 div.container form div.row div.form-group {
+    margin-bottom: unset;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm label {
+    margin: 0.2rem 0px;
+    color: var(--fit-orange-dark);
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 90%;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea {
+    outline: none;
+    /* border: none; */
+    border-radius: 0px;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea:focus {
+    border-color: var(--fit-orange-dark);
+    box-shadow: 0 0 0 0.1rem var(--fit-orange-dark);
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.section2 .section2-main-container3 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
+        font-size: 150%;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section.section2 .section2-main-container3 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
+        font-size: 160%;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section.section2 .section2-main-container3 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
+        font-size: 170%;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section.section2 .section2-main-container3 {
+        height: calc(100% / 3);
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 {
+        height: 15%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
+        font-size: 180%;
+    }
+}

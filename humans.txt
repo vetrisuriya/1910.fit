@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> Vetri suriya R 
+    <role> Web Developer / Designer 
+
+# THANKS
+
+    Arun Murugesan = Svg maker
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr, Normalize v8, Bootstrap v4
