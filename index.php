@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,51 +8,19 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <link rel="stylesheet" href="plugins/flat-video-player/video.css">
-
     <title>S10.fit</title>
 
-    <!-- favicon -->
-    <link rel="shortcut  icon" href="favicon.ico" type="image/x-icon" />
-</head>
+    <!-- default styles -->
+    <?php include("inc/styles.php"); ?>
 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="plugins/flat-video-player/video.css">
+
+</head>
 <body>
 
-    <nav class="navbar navbar-expand-md bg-light navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="./logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Corporate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Partner</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Get Started</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign In</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+    <!-- navbar -->
+    <?php include("inc/navbar.php"); ?>
 
     <div class="main-container">
 
@@ -599,121 +566,13 @@
         </section>
 
 
-        <!-- section 7 -->
-        <section class="section7">
-            <div class="parent-container1"></div>
-            <div class="parent-container2">
-                <div class="row">
-                    <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1 col-xs-12">
-                        <div class="section7-main-container col-md-12 col-sm-12">
-                            <div class="header">S10.fit</div>
-                            <div class="header1">
-                                <a href="tel:+919884507007">+91 9884507007</a>
-                            </div>
-                            <div class="header2">
-                               <a href="mailto:support@s10.fit">support@s10.fit</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="parent-container3"></div>
-        </section>
-
-
-        <!-- section 8 -->
-        <section class="section8">
-            <footer class="page-footer font-small">
-                <!-- Footer Links -->
-                <div class="">
-                    <!-- Grid row-->
-                    <div class="d-flex justify-content-center row text-center footer-nav">
-                        <div class="col-md-2 mb-3">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">FAQ</a>
-                            </h6>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">Forum</a>
-                            </h6>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">Support</a>
-                            </h6>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">Why Exercise</a>
-                            </h6>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">About Us</a>
-                            </h6>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">Privacy Policy</a>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="pt-4 row text-center footer-social-nav">
-                        <!-- Grid column -->
-                        <div class="col-md-12">
-                            <div class="mb-5 flex-center">
-                                <!-- Facebook -->
-                                <a class="fb-ic" href="#">
-                                    <i class="fa fa-facebook fa-lg white-text mr-4"></i>
-                                </a>
-                                <!-- Twitter -->
-                                <a class="tw-ic" href="#">
-                                    <i class="fa fa-twitter fa-lg white-text mr-4"></i>
-                                </a>
-                                <!-- Google +-->
-                                <a class="gplus-ic" href="#">
-                                    <i class="fa fa-google-plus fa-lg white-text mr-4"> </i>
-                                </a>
-                                <!--Linkedin -->
-                                <a class="li-ic" href="#">
-                                    <i class="fa fa-linkedin fa-lg white-text mr-4"> </i>
-                                </a>
-                                <!--Instagram-->
-                                <a class="ins-ic" href="#">
-                                    <i class="fa fa-instagram fa-lg white-text mr-4"> </i>
-                                </a>
-                                <!--Pinterest-->
-                                <a class="pin-ic" href="#">
-                                    <i class="fa fa-pinterest fa-lg white-text mr-4"> </i>
-                                </a>
-                                    <!--Youtube-->
-                                <a class="yout-ic" href="#">
-                                    <i class="fa fa-youtube-square fa-lg white-text"> </i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
-                    </div>
-                    <!-- Grid row-->
-                </div>
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2018 Copyright :
-                    <a href="#!" style="color: var(--fit-orange-dark);"> S10.fit </a>
-                </div>
-                <!-- Copyright -->
-            </footer>
-        </section>
+        <!-- footer -->
+        <?php include("inc/footer.php"); ?>
 
     </div>
 
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <?php include("inc/scripts.php"); ?>
 
     <script src="plugins/flat-video-player/video.js"></script>
     <script src="plugins/flat-video-player/video1.js"></script>
@@ -724,28 +583,6 @@
 
     <script>
         $(document).ready(function () {
-
-            $windowWidth = window.outerWidth;
-
-
-            $(document).on("scroll", function () {
-
-                $scrollHeight = window.scrollY;
-                $windowWidth = window.outerWidth;
-                var changeNavstyle = 0;
-
-
-                if ($scrollHeight > 50) {
-                    if (changeNavstyle == 0) {
-                        $("body").addClass("scrollNav");
-                        changeNavstyle = 1;
-                    }
-                } else {
-                    $("body").removeClass("scrollNav");
-                }
-            });
-
-
 
             // Activate Carousel
             $("#myCarousel").carousel();
@@ -796,7 +633,6 @@
 
 
 
-
             // Activate Carousel
             $("#myCarousel1").carousel();
             // Enable Carousel Controls
@@ -807,10 +643,8 @@
                 $("#myCarousel1").carousel("next");
             });
 
-    
         });
 
     </script>
 </body>
-
 </html>

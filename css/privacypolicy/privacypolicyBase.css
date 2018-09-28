@@ -1,0 +1,28 @@
+:root {
+
+    /* section 2 variables */
+    --section1: 200vh;
+
+
+    /* section 7 variables */
+    --section7-1200: 100vh;
+    --section7-parent-container1-1200: 40%;
+    --section7-parent-container3-1200: 40%;
+    --section7-parent-container2-1200: calc(calc(var(--section7-1200) - var(--section7-parent-container1-1200)) - var(--section7-parent-container3-1200));
+    --section7-992: 90vh;
+    --section7-parent-container1-992: 40%;
+    --section7-parent-container3-992: 40%;
+    --section7-parent-container2-992: calc(calc(var(--section7-992) - var(--section7-parent-container1-992)) - var(--section7-parent-container3-992));
+    --section7-768: 80vh;
+    --section7-parent-container1-768: 38%;
+    --section7-parent-container3-768: 38%;
+    --section7-parent-container2-768: calc(calc(var(--section7-768) - var(--section7-parent-container1-768)) - var(--section7-parent-container3-768));
+    --section7-576: 70vh;
+    --section7-parent-container1-576: 34%;
+    --section7-parent-container3-576: 34%;
+    --section7-parent-container2-576: calc(calc(var(--section7-576) - var(--section7-parent-container1-576)) - var(--section7-parent-container3-576));
+    --section7: 60vh;
+    --section7-parent-container1: 30%;
+    --section7-parent-container3: 30%;
+    --section7-parent-container2: calc(calc(var(--section7) - var(--section7-parent-container1)) - var(--section7-parent-container3));
+}

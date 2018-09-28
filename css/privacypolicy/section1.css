@@ -1,0 +1,35 @@
+/* //////////////////////////////////// section 2 ///////////////////////////////////////// */
+
+section.section1 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background: rgb(228, 221, 221);
+    height: var(--section1);
+    overflow: hidden;
+    position: relative;
+}
+section.section1 > .row {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
