@@ -4,9 +4,9 @@
 
 @import "./partnerBase.css";
 
-@import "section1.css";
+@import "./section1.css";
 
-@import "section2.css";
+@import "./section2.css";
 
 @import "../section7.css";
 

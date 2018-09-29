@@ -124,7 +124,7 @@ section.section1 .parent-container2 .row > div {
     width: 100%;
     position: relative;
     clear: both;
-    height: 80%;
+    height: 70%;
     padding: 0px;
     margin: 0px;
 }
@@ -132,28 +132,19 @@ section.section1 .parent-container2 .row > div {
     text-align: center;
     color: #000000;
     letter-spacing: 1.5px;
-    height: 15%;
+    height: 50%;
     font-size: 120%;
 }
 .section1-main-container .slogan {
     width: 100%;
     margin: 0px;
-    height: 25%;
+    height: 50%;
     position: relative;
     text-align: center;
     font-size: 100%;
     font-weight: bold;
 }
-.section1-main-container .desc {
-    width: 100%;
-    margin: 0px;
-    height: 54%;
-    position: relative;
-    text-align: center;
-    font-size: 82%;
-}
-.section1-main-container .slogan span, .section1-main-container .desc span {
-    width: 100%;
+.section1-main-container .header span, .section1-main-container1 .slogan span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -166,7 +157,7 @@ section.section1 .parent-container2 .row > div {
     width: 100%;
     position: relative;
     clear: both;
-    height: 20%;
+    height: 30%;
     margin: 0px;
     padding: 0px;
 }
@@ -290,15 +281,9 @@ section.section1 .parent-container2 .row > div {
     }
     .section1-main-container .header {
         font-size: 140%;
-        height: 25%;
     }
     .section1-main-container .slogan { 
         font-size: 110%;
-        height: 15%;
-    }
-    .section1-main-container .desc {
-        font-size: 84%;
-        height: 60%;
     }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -308,15 +293,9 @@ section.section1 .parent-container2 .row > div {
     }
     .section1-main-container .header {
         font-size: 140%;
-        height: 25%;
     }
     .section1-main-container .slogan { 
         font-size: 110%;
-        height: 15%;
-    }
-    .section1-main-container .desc {
-        font-size: 84%;
-        height: 60%;
     }
 }
 /* Large devices (desktops, 992px and up) */
@@ -326,15 +305,9 @@ section.section1 .parent-container2 .row > div {
     }
     .section1-main-container .header {
         font-size: 150%;
-        height: 25%;
     }
     .section1-main-container .slogan { 
         font-size: 120%;
-        height: 15%;
-    }
-    .section1-main-container .desc {
-        font-size: 86%;
-        height: 60%;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */
@@ -344,15 +317,9 @@ section.section1 .parent-container2 .row > div {
     }
     .section1-main-container .header {
         font-size: 160%;
-        height: 25%;
     }
     .section1-main-container .slogan { 
         font-size: 130%;
-        height: 15%;
-    }
-    .section1-main-container .desc {
-        font-size: 90%;
-        height: 60%;
     }
 }
 

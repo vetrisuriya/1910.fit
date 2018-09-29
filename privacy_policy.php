@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 offset-lg-2 offset-md-1 parent-wrapper">
                     
-                    
+                    <h1>Privacy Policy</h1>
 
                 </div>
             </div>

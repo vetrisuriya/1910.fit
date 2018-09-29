@@ -4,7 +4,7 @@ section.section1 {
     width: 100%;
     padding: 0px;
     margin: 0px auto;
-    background: rgb(228, 221, 221);
+    background: #e4dddd;
     height: var(--section1);
     overflow: hidden;
     position: relative;
@@ -16,6 +16,11 @@ section.section1 > .row {
     padding: 0px;
 }
 
+section.section1 div.parent-wrapper {
+    padding: 50px 0px;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

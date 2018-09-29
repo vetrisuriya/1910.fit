@@ -55,7 +55,7 @@ section.section2 .parent-wrapper {
 /* section2 main container1 */
 section.section2 .section2-main-container1 {
     width: 100%;
-    height: 27%;
+    height: 56%;
     margin: 0% auto;
     padding: 0px;
 }
@@ -66,7 +66,7 @@ section.section2 .section2-main-container1 .inner {
     margin: 0px auto;
 }
 section.section2 .section2-main-container1 .inner .inner-container1 {
-    height: 12%;
+    height: 10%;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -83,7 +83,7 @@ section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
 }
 section.section2 .section2-main-container1 .inner .inner-container2 {
     width: 100%;
-    height: 88%;
+    height: 90%;
     padding: 0px;
     margin: 0px;
 }
@@ -94,86 +94,46 @@ section.section2 .section2-main-container1 .inner .inner-container2 .inner {
     position: relative;
     padding: 0px;
 }
-section.section2 .section2-main-container1 .inner .inner-container2 .inner > div.row {
-    width: 100%;
-    margin: 0px auto;
+section.section2 .section2-main-container1 .inner .inner-container2 .inner .services-inner {
+    transition: .5s;
+    pointer-events: none;
+    user-select: none;
 }
-section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
-    font-size: 90%;
-    color: var(--power-black-dark);
-}
-section.section2 .section2-main-container1 .circle {
-    padding: 13px 20px;
-    border-radius: 50%;
-    background-color: var(--fit-orange-light);
-    color: #fff;
-    max-height: 50px;
-    z-index: 2;
-}
-section.section2 .section2-main-container1 .how-it-works.row .col-2 {
-    align-self: stretch;
-}
-section.section2 .section2-main-container1 .how-it-works.row .col-2::after {
-    content: "";
-    position: absolute;
-    border-left: 3px solid var(--fit-orange-light);
-    z-index: 1;
-}
-section.section2 .section2-main-container1 .how-it-works.row .col-2.bottom::after {
-    height: 50%;
-    left: 50%;
-    top: 50%;
-}
-section.section2 .section2-main-container1 .how-it-works.row .col-2.full::after {
-    height: 100%;
-    left: calc(50% - 3px);
-}
-section.section2 .section2-main-container1 .how-it-works.row .col-2.top::after {
-    height: 50%;
-    left: 50%;
-    top: 0;
-}
-section.section2 .section2-main-container1 .timeline div {
-    padding: 0;
-    height: 40px;
-}
-section.section2 .section2-main-container1 .timeline hr {
-    border-top: 3px solid var(--fit-orange-light);
-    margin: 0;
-    top: 17px;
-    position: relative;
-}
-section.section2 .section2-main-container1 .timeline .col-2 {
-    display: flex;
+section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-text {
+    height: 130px;
+    padding-right: 10px;
     overflow: hidden;
+    padding: 10px 15px;
 }
-section.section2 .section2-main-container1 .timeline .corner {
-    border: 3px solid var(--fit-orange-light);
-    width: 100%;
+section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-text h4 {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
     position: relative;
-    border-radius: 15px;
+    text-transform: uppercase;
 }
-section.section2 .section2-main-container1 .timeline .top-right {
-    left: 50%;
-    top: -50%;
+section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-text h4::before {
+    background: #ec6d48 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 35px;
 }
-section.section2 .section2-main-container1 .timeline .left-bottom {
-    left: -50%;
-    top: calc(50% - 3px);
+section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-wrapper:hover .services-inner {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
-section.section2 .section2-main-container1 .timeline .top-left {
-    left: -50%;
-    top: -50%;
-}
-section.section2 .section2-main-container1 .timeline .right-bottom {
-    left: 50%;
-    top: calc(50% - 3px);
-}
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     section.section2 .section2-main-container1 {
-        height: calc(100% / 3);
+        height: 45%;
     }
     section.section2 .section2-main-container1 .inner .inner-container1 {
         height: 15%;
@@ -181,65 +141,66 @@ section.section2 .section2-main-container1 .timeline .right-bottom {
     section.section2 .section2-main-container1 .inner .inner-container2 {
         height: 85%;
     }
-    section.section2 .section2-main-container1 .inner .inner-container2 > h3 {
-        font-size: 150%;
-    }
-    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
-        font-size: 100%;
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-text {
+        height: 150px;
+        padding: 28px 25px;
     }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     section.section2 .section2-main-container1 {
-        height: calc(100% / 3);
+        height: 45%;
     }
     section.section2 .section2-main-container1 .inner .inner-container1 {
         height: 15%;
     }
-    section.section2 .section2-main-container1 .inner .inner-container2 {
-        height: 85%;
-    }
     section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
         font-size: 160%;
     }
-    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
-        font-size: 106%;
+    section.section2 .section2-main-container1 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-text {
+        height: 150px;
+        padding: 28px 25px;
     }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     section.section2 .section2-main-container1 {
-        height: calc(100% / 3);
+        height: 35%;
     }
     section.section2 .section2-main-container1 .inner .inner-container1 {
         height: 15%;
     }
-    section.section2 .section2-main-container1 .inner .inner-container2 {
-        height: 85%;
-    }
     section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
         font-size: 170%;
     }
-    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
-        font-size: 110%;
+    section.section2 .section2-main-container1 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-text {
+        height: 150px;
+        padding: 28px 25px;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     section.section2 .section2-main-container1 {
-        height: calc(100% / 3);
+        height: 35%;
     }
     section.section2 .section2-main-container1 .inner .inner-container1 {
         height: 15%;
     }
-    section.section2 .section2-main-container1 .inner .inner-container2 {
-        height: 85%;
-    }
     section.section2 .section2-main-container1 .inner .inner-container1 > h3 {
         font-size: 180%;
     }
-    section.section2 .section2-main-container1 .inner .inner-container2 .inner h5 {
-        font-size: 110%;
+    section.section2 .section2-main-container1 .inner .inner-container2 {
+        height: 85%;
+    }
+    section.section2 .section2-main-container1 .inner .inner-container2 .inner .our-services-text {
+        height: 150px;
+        padding: 28px 25px;
     }
 }
 
@@ -248,7 +209,7 @@ section.section2 .section2-main-container1 .timeline .right-bottom {
 /* ///////////////////////////////////// section2 main container2 /////////////////////////////////////// */
 section.section2 .section2-main-container2 {
     width: 100%;
-    height: 28%;
+    height: 14%;
     margin: 0% auto;
     padding: 0px;
 }
@@ -259,7 +220,7 @@ section.section2 .section2-main-container2 .inner {
     padding: 0px;
 }
 section.section2 .section2-main-container2 .inner .inner-container1 {
-    height: 12%;
+    height: 40%;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -276,215 +237,185 @@ section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
 }
 section.section2 .section2-main-container2 .inner .inner-container2 {
     width: 100%;
-    height: 88%;
+    height: 60%;
     padding: 0px;
     margin: 0px;
 }
-section.section2 .section2-main-container2 .inner .inner-container2 .tab_container {
+section.section2 .section2-main-container2 .inner .inner-container2 .inner {
     width: 100%;
     margin: 0 auto;
     position: relative;
     height: 100%;
 }
-section.section2 .section2-main-container2 .inner .inner-container2 .tab_container input, section.section2 .section2-main-container2 .inner .inner-container2 .tab_container section {
-    clear: both;
-    padding-top: 5px;
-    display: none;
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slide {
+    margin: 0px 20px;
 }
-section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label {
-    font-weight: 700;
-    font-size: 18px;
-    display: block;
-    float: left;
-    width: 50%;
-    color: #757575;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    background: #dcd9d9;
-    margin-bottom: unset;
-    height: 10%;
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slide img {
+    width: 100%;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slider
+{
     position: relative;
-}
-section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    font-size: 90%;
-}
-section.section2 .section2-main-container2 .inner .inner-container2 .tab_container #tab1:checked ~ #content1,
-section.section2 .section2-main-container2 .inner .inner-container2 .tab_container #tab2:checked ~ #content2 {
     display: block;
-    height: calc(calc(100% - 10%) - 5px);
-    /* padding: 20px; */
-    /* background: var(--power-black-dark); */
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
-section.section2 .section2-main-container2 .inner .inner-container2 .tab_container [id^="tab"]:checked + label {
-    background: #fff;
-    box-shadow: inset 0 3px var(--fit-orange-dark);
-}
-
-[data-state="Good"] {
-    --duration: 800ms;
-    --delay: 100ms;
-    --color: #E7EEF8;
-    --faded-color: rgba(172, 196, 231, 0.3);
-}
-section.section2 .section2-main-container2 #app {
-    width: 100%;
-    height: 100%;
-}
-section.section2 .section2-main-container2 ul {
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    z-index: 2;
-    width: 100%;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-list:focus
+{
+    outline: none;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slider .slick-track,
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-track:before,
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-track:after
+{
+    display: table;
+    content: '';
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-track:after
+{
+    clear: both;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-loading .slick-track
+{
+    visibility: hidden;
+}
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slide
+{
+    display: none;
+    float: left;
     height: 100%;
+    min-height: 1px;
 }
-section.section2 .section2-main-container2 li {
-    padding: 5px 10px;
-    background-color: #ffae4f;
-    margin-bottom: .1rem;
-    -webkit-animation: enter var(--duration) cubic-bezier(0.5, 0, 0.2, 1) both;
-            animation: enter var(--duration) cubic-bezier(0.5, 0, 0.2, 1) both;
+[dir='rtl'] .slick-slide
+{
+    float: right;
 }
-section.section2 .section2-main-container2 #app.list1 ul li {
-    height: calc(calc(100% / 7) - .1rem);
-    position: relative;
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slide img
+{
+    display: block;
 }
-section.section2 .section2-main-container2 #app.list2 ul li {
-    height: calc(calc(100% / 5) - .1rem);
-    position: relative;
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slide.slick-loading img
+{
+    display: none;
 }
-section.section2 .section2-main-container2 li:last-child {
-    margin-bottom: 0;
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-slide.dragging img
+{
+    pointer-events: none;
 }
-section.section2 .section2-main-container2 li:nth-child(1) {
-    -webkit-animation-delay: calc(1 * var(--delay));
-            animation-delay: calc(1 * var(--delay));
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-initialized .slick-slide
+{
+    display: block;
 }
-section.section2 .section2-main-container2 li:nth-child(2) {
-    -webkit-animation-delay: calc(2 * var(--delay));
-            animation-delay: calc(2 * var(--delay));
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-loading .slick-slide
+{
+    visibility: hidden;
 }
-section.section2 .section2-main-container2 li:nth-child(3) {
-    -webkit-animation-delay: calc(3 * var(--delay));
-            animation-delay: calc(3 * var(--delay));
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
 }
-section.section2 .section2-main-container2 li:nth-child(4) {
-    -webkit-animation-delay: calc(4 * var(--delay));
-            animation-delay: calc(4 * var(--delay));
+section.section2 .section2-main-container2 .inner .inner-container2 .inner .slick-arrow.slick-hidden {
+    display: none;
 }
-section.section2 .section2-main-container2 li:nth-child(5) {
-    -webkit-animation-delay: calc(5 * var(--delay));
-            animation-delay: calc(5 * var(--delay));
-}
-section.section2 .section2-main-container2 li:nth-child(6) {
-    -webkit-animation-delay: calc(6 * var(--delay));
-            animation-delay: calc(6 * var(--delay));
-}
-section.section2 .section2-main-container2 li:nth-child(7) {
-    -webkit-animation-delay: calc(7 * var(--delay));
-            animation-delay: calc(7 * var(--delay));
-}
-section.section2 .section2-main-container2 li .title {
-    color: var(--power-black-dark);
-    font-size: 86%;
-    width: calc(100% - 20px);
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-@-webkit-keyframes enter {
-    from {
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-                transform: scale(0.7);
-    }
-}
-@keyframes enter {
-    from {
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-                transform: scale(0.7);
-    }
-}
+
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     section.section2 .section2-main-container2 {
-        height: calc(100% / 3);
+        height: 20%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 {
-        height: 15%;
-    }
-    section.section2 .section2-main-container2 .inner .inner-container2 {
-        height: 85%;
+        height: 40%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
         font-size: 150%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 60%;
     }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     section.section2 .section2-main-container2 {
-        height: calc(100% / 3);
+        height: 20%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 {
-        height: 15%;
-    }
-    section.section2 .section2-main-container2 .inner .inner-container2 {
-        height: 85%;
+        height: 40%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
         font-size: 160%;
     }
-    section.section2 .section2-main-container2 li .title {
-        font-size: 100%;
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 60%;
     }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     section.section2 .section2-main-container2 {
-        height: calc(100% / 3);
+        height: 25%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 {
-        height: 15%;
-    }
-    section.section2 .section2-main-container2 .inner .inner-container2 {
-        height: 85%;
+        height: 40%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
         font-size: 170%;
     }
-    section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label span {
-        font-size: 108%;
-    }
-    section.section2 .section2-main-container2 li .title {
-        font-size: 104%;
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 60%;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     section.section2 .section2-main-container2 {
-        height: calc(100% / 3);
+        height: 25%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 {
-        height: 15%;
-    }
-    section.section2 .section2-main-container2 .inner .inner-container2 {
-        height: 85%;
+        height: 40%;
     }
     section.section2 .section2-main-container2 .inner .inner-container1 > h3 {
         font-size: 180%;
     }
-    section.section2 .section2-main-container2 .inner .inner-container2 .tab_container label span {
-        font-size: 116%;
-    }
-    section.section2 .section2-main-container2 li .title {
-        font-size: 106%;
+    section.section2 .section2-main-container2 .inner .inner-container2 {
+        height: 60%;
     }
 }
 
@@ -493,7 +424,7 @@ section.section2 .section2-main-container2 li .title {
 /* ///////////////////////////////////// section2 main container3 /////////////////////////////////////// */
 section.section2 .section2-main-container3 {
     width: 100%;
-    height: 45%;
+    height: 30%;
     margin: 0% auto;
     padding: 0px;
 }
@@ -502,7 +433,7 @@ section.section2 .section2-main-container3 .inner {
     width: 100%;
 }
 section.section2 .section2-main-container3 .inner .inner-container1 {
-    height: 8%;
+    height: 15%;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -519,38 +450,40 @@ section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
 }
 section.section2 .section2-main-container3 .inner .inner-container2 {
     width: 100%;
-    height: 92%;
+    height: 85%;
     margin: 0px;
     /* background: #ffae4f; */
     /* padding: 20px; */
 }
-section.section2 .section2-main-container3 .inner .inner-container2 div.container {
+section.section2 .section2-main-container3 .inner .inner-container2 div.inner {
     width: 100%;
     height: 100%;
     padding: 0px;
     margin: 0px auto;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 div.container form {
+section.section2 .section2-main-container3 .inner .inner-container2 div.inner form {
     width: 100%;
     height: 100%;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 div.container form div.row {
+section.section2 .section2-main-container3 .inner .inner-container2 div.inner form div.row {
     height: 100%;
     width: 100%;
     margin: 0px auto;
     padding: 0px;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 div.container form div.form1 {
-    height: 90%;
-    position: relative;
-}
-section.section2 .section2-main-container3 .inner .inner-container2 div.container form div.form2 {
-    height: 10%;
-    position: relative;
-}
-section.section2 .section2-main-container3 .inner .inner-container2 div.container form div.row div.form-group {
+section.section2 .section2-main-container3 .inner .inner-container2 div.inner form div.row div.form-group {
     margin-bottom: unset;
-    height: calc(100% / 6);
+    height: calc(100% / 5);
+    position: relative;
+}
+section.section2 .section2-main-container3 .inner .inner-container2 div.inner form div.row div.form-group button {
+    background:var(--fit-orange-dark); 
+    color: white; 
+    width: 50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm label {
     margin: 0.2rem 0px;
@@ -575,60 +508,60 @@ section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyo
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     section.section2 .section2-main-container3 {
-        height: calc(100% / 3);
+        height: 35%;
     }
     section.section2 .section2-main-container3 .inner .inner-container1 {
         height: 15%;
     }
-    section.section2 .section2-main-container3 .inner .inner-container2 {
-        height: 85%;
-    }
     section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
         font-size: 150%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
     }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     section.section2 .section2-main-container3 {
-        height: calc(100% / 3);
+        height: 35%;
     }
     section.section2 .section2-main-container3 .inner .inner-container1 {
         height: 15%;
     }
-    section.section2 .section2-main-container3 .inner .inner-container2 {
-        height: 85%;
-    }
     section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
         font-size: 160%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
     }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     section.section2 .section2-main-container3 {
-        height: calc(100% / 3);
+        height: 40%;
     }
     section.section2 .section2-main-container3 .inner .inner-container1 {
         height: 15%;
     }
-    section.section2 .section2-main-container3 .inner .inner-container2 {
-        height: 85%;
-    }
     section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
         font-size: 170%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     section.section2 .section2-main-container3 {
-        height: calc(100% / 3);
+        height: 40%;
     }
     section.section2 .section2-main-container3 .inner .inner-container1 {
         height: 15%;
     }
-    section.section2 .section2-main-container3 .inner .inner-container2 {
-        height: 85%;
-    }
     section.section2 .section2-main-container3 .inner .inner-container1 > h3 {
         font-size: 180%;
+    }
+    section.section2 .section2-main-container3 .inner .inner-container2 {
+        height: 85%;
     }
 }

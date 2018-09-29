@@ -1,33 +1,33 @@
 :root {
 
     /* section 1 variables */
-    --section1-1200: 120vh;
-    --section1-parent-container1-1200: 34%;
-    --section1-parent-container3-1200: 34%;
+    --section1-1200: 110vh;
+    --section1-parent-container1-1200: 38%;
+    --section1-parent-container3-1200: 38%;
     --section1-parent-container2-1200: calc(calc(var(--section1-1200) - var(--section1-parent-container1-1200)) - var(--section1-parent-container3-1200));
-    --section1-992: 110vh;
-    --section1-parent-container1-992: 34%;
-    --section1-parent-container3-992: 34%;
+    --section1-992: 100vh;
+    --section1-parent-container1-992: 36%;
+    --section1-parent-container3-992: 36%;
     --section1-parent-container2-992: calc(calc(var(--section1-992) - var(--section1-parent-container1-992)) - var(--section1-parent-container3-992));
-    --section1-768: 100vh;
-    --section1-parent-container1-768: 32%;
-    --section1-parent-container3-768: 32%;
+    --section1-768: 90vh;
+    --section1-parent-container1-768: 34%;
+    --section1-parent-container3-768: 34%;
     --section1-parent-container2-768: calc(calc(var(--section1-768) - var(--section1-parent-container1-768)) - var(--section1-parent-container3-768));
-    --section1-576: 90vh;
-    --section1-parent-container1-576: 28%;
-    --section1-parent-container3-576: 28%;
+    --section1-576: 80vh;
+    --section1-parent-container1-576: 30%;
+    --section1-parent-container3-576: 30%;
     --section1-parent-container2-576: calc(calc(var(--section1-576) - var(--section1-parent-container1-576)) - var(--section1-parent-container3-576));
-    --section1: 90vh;
-    --section1-parent-container1: 24%;
-    --section1-parent-container3: 24%;
+    --section1: 70vh;
+    --section1-parent-container1: 26%;
+    --section1-parent-container3: 26%;
     --section1-parent-container2: calc(calc(var(--section1) - var(--section1-parent-container1)) - var(--section1-parent-container3));
 
 
     /* section 2 variables */
-    --section2-1200: 340vh;
-    --section2-992: 330vh;
-    --section2-768: 320vh;
-    --section2-576: 310vh;
+    --section2-1200: 200vh;
+    --section2-992: 200vh;
+    --section2-768: 230vh;
+    --section2-576: 230vh;
     --section2: 300vh;
 
 
