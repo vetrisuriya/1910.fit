@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Partner - S10.fit</title>
-
+    
     <!-- default styles -->
     <?php include("inc/styles.php"); ?>
 

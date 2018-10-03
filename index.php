@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="plugins/flat-video-player/video.css">
 
+
 </head>
 <body>
 
@@ -180,7 +181,7 @@
                     <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1">
                         <div class="section3-main-container col-md-12 col-sm-12">
                             <div class="header">
-                                "<strong>Exercising</strong>,is simple & <strong>Exciting</strong>"
+                                <strong>How</strong> it <strong>Works?</strong>
                             </div>
                             <div class="header1">
                                 Autonomous fitness program that is simple to adopt, takes less time to execute and

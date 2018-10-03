@@ -52,7 +52,7 @@ section.section1 .parent-container1:after {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(../head-body-svg.svg);
+    background: url(../../head-body-svg.svg);
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
@@ -131,49 +131,26 @@ section.section1 .parent-container2 .row > div {
 .section1-main-container .header {
     text-align: center;
     color: #000000;
-    text-transform: uppercase;
     letter-spacing: 1.5px;
-    height: 25%;
-    font-size: 130%;
+    height: 35%;
+    font-size: 120%;
 }
-.section1-main-container .slogans {
+.section1-main-container .slogan {
     width: 100%;
-    margin: 2% 0px 0px 0px;
-    height: 56%;
+    margin: 0px;
+    height: 65%;
     position: relative;
-}
-.section1-main-container .slogans div.carousel {
-    width: 100%;
-    height: 100%;
-}
-.section1-main-container .slogans div.carousel .carousel-indicators {
-    bottom: 15px;
-    margin: 0px auto;
-}
-.section1-main-container .slogans div.carousel .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0px 12px;
-    cursor: pointer;
-}
-.section1-main-container .slogans div.carousel .carousel-inner {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: unset;
-}
-.section1-main-container .slogans div.carousel .carousel-inner .carousel-item {
-    height: 50px;
-    width: 100%;
-    margin: 0px auto;
-}
-.section1-main-container .slogans div.carousel .carousel-inner .carousel-item p {
-    font-size: 106%;
     text-align: center;
-    color: #ededed;
-    text-transform: capitalize;
+    font-size: 100%;
+    font-weight: bold;
 }
+.section1-main-container .header span, .section1-main-container1 .slogan span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 .section1-main-container1 {
@@ -303,9 +280,9 @@ section.section1 .parent-container2 .row > div {
         height: var(--section1-parent-container2-576);
     }
     .section1-main-container .header {
-        font-size: 120%;
+        font-size: 140%;
     }
-    .section1-main-container .slogans div.carousel .carousel-inner .carousel-item p {
+    .section1-main-container .slogan { 
         font-size: 110%;
     }
 }
@@ -315,10 +292,10 @@ section.section1 .parent-container2 .row > div {
         height: var(--section1-parent-container2-768);
     }
     .section1-main-container .header {
-        font-size: 130%;
+        font-size: 140%;
     }
-    .section1-main-container .slogans div.carousel .carousel-inner .carousel-item p {
-        font-size: 120%;
+    .section1-main-container .slogan { 
+        font-size: 110%;
     }
 }
 /* Large devices (desktops, 992px and up) */
@@ -329,8 +306,8 @@ section.section1 .parent-container2 .row > div {
     .section1-main-container .header {
         font-size: 150%;
     }
-    .section1-main-container .slogans div.carousel .carousel-inner .carousel-item p {
-        font-size: 130%;
+    .section1-main-container .slogan { 
+        font-size: 120%;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */
@@ -341,8 +318,8 @@ section.section1 .parent-container2 .row > div {
     .section1-main-container .header {
         font-size: 160%;
     }
-    .section1-main-container .slogans div.carousel .carousel-inner .carousel-item p {
-        font-size: 140%;
+    .section1-main-container .slogan { 
+        font-size: 130%;
     }
 }
 
@@ -365,7 +342,7 @@ section.section1 .parent-container3:after {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(../head-body-svg.svg);
+    background: url(../../head-body-svg.svg);
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;

@@ -1,0 +1,322 @@
+/* //////////////////////////////////// section 2 ///////////////////////////////////////// */
+
+section.section2 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background: white;
+    height: var(--section2);
+    overflow: hidden;
+    position: relative;
+}
+section.section2 > .row {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.section2 {
+        height: var(--section2-576);
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section.section2 {
+        height: var(--section2-768);
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section.section2 {
+        height: var(--section2-992);
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section.section2 {
+        height: var(--section2-1200);
+    }
+}
+
+
+section.section2 .parent-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+
+/* section2 main container1 */
+section.section2 .section2-main-container1 {
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+}
+section.section2 .section2-main-container1 {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner #tabs {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+section.section2 .section2-main-container1 .inner #tabs .main1 {
+    height: 40%;
+}
+section.section2 .section2-main-container1 .inner #tabs .main2 {
+    height: 60%;
+}
+section.section2 .section2-main-container1 .inner ul {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+section.section2 .section2-main-container1 .inner ul li {
+    height: calc(100% / 7);
+}
+section.section2 .section2-main-container1 .inner ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #3b3b3b;
+    border-top: solid 2px #e9e9e9;
+    padding: 0px;
+    z-index: 1;
+    opacity: .5;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+section.section2 .section2-main-container1 .inner ul li:focus, a:focus {
+    outline: none;
+}
+section.section2 .section2-main-container1 .inner ul li:nth-child(1) a {
+    border-top: none;
+}
+section.section2 .section2-main-container1 .inner ul li a.active {
+    opacity: 1;
+}
+section.section2 .section2-main-container1 .inner .tag {
+    position: relative;
+    width: 100%;
+}
+section.section2 .section2-main-container1 .inner .icon {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--fit-orange-light);
+    border-radius: 100%;
+    vertical-align: middle;
+}
+section.section2 .section2-main-container1 .inner .block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    color: var(--power-black-dark);
+}
+section.section2 .section2-main-container1 .inner .title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 10px;
+    vertical-align: middle;
+    color: #7b7b7b;
+} 
+section.section2 .section2-main-container1 .inner .browser {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--fit-orange-dark);
+    right: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 24px;
+    background: #fff;
+    border-bottom: solid 2px var(--fit-orange-dark);
+    z-index: 2;
+}
+section.section2 .section2-main-container1 .inner .dot {
+    position: relative;
+    display: inline-block;
+    padding: 4px;
+    background: var(--fit-orange-dark);
+    border-radius: 100%;
+}
+section.section2 .section2-main-container1 .inner .dot:nth-child(1) {
+    margin-left: 7px;
+}
+section.section2 .section2-main-container1 .inner #tab-functions, 
+section.section2 .section2-main-container1 .inner #tab-personalised, 
+section.section2 .section2-main-container1 .inner #tab-exercise, 
+section.section2 .section2-main-container1 .inner #tab-diet, 
+section.section2 .section2-main-container1 .inner #tab-dashboard, 
+section.section2 .section2-main-container1 .inner #tab-health, 
+section.section2 .section2-main-container1 .inner #tab-challenges {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+section.section2 .section2-main-container1 .inner #tab-functions .inner, 
+section.section2 .section2-main-container1 .inner #tab-personalised .inner, 
+section.section2 .section2-main-container1 .inner #tab-exercise .inner, 
+section.section2 .section2-main-container1 .inner #tab-diet .inner, 
+section.section2 .section2-main-container1 .inner #tab-dashboard .inner, 
+section.section2 .section2-main-container1 .inner #tab-health .inner, 
+section.section2 .section2-main-container1 .inner #tab-challenges .inner {
+    margin-top: 30px;
+    height: calc(100% - 30px);
+    width: 100%;
+    background: #e0e0e0b5;
+}
+section.section2 .section2-main-container1 .inner #tab-functions .inner ul, 
+section.section2 .section2-main-container1 .inner #tab-personalised .inner ul, 
+section.section2 .section2-main-container1 .inner #tab-exercise .inner ul, 
+section.section2 .section2-main-container1 .inner #tab-diet .inner ul, 
+section.section2 .section2-main-container1 .inner #tab-dashboard .inner ul, 
+section.section2 .section2-main-container1 .inner #tab-health .inner ul, 
+section.section2 .section2-main-container1 .inner #tab-challenges .inner ul {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 100%;
+}
+
+section.section2 .section2-main-container1 .inner #tab-functions .inner ul li {
+    height: calc(100% / 10);
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner #tab-personalised .inner ul li {
+    height: calc(100% / 10);
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner #tab-exercise .inner ul li {
+    height: calc(100% / 10);
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner #tab-diet .inner ul li {
+    height: calc(100% / 10);
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner #tab-dashboard .inner ul li {
+    height: calc(100% / 10);
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner #tab-health .inner ul li {
+    height: calc(100% / 10);
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li {
+    height: calc(100% / 10);
+    position: relative;
+}
+section.section2 .section2-main-container1 .inner #tab-functions .inner ul li span, 
+section.section2 .section2-main-container1 .inner #tab-personalised .inner ul li span, 
+section.section2 .section2-main-container1 .inner #tab-exercise .inner ul li span, 
+section.section2 .section2-main-container1 .inner #tab-diet .inner ul li span, 
+section.section2 .section2-main-container1 .inner #tab-dashboard .inner ul li span, 
+section.section2 .section2-main-container1 .inner #tab-health .inner ul li span, 
+section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.section2 .section2-main-container1 .inner ul li a {
+        padding: 20px 5px;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main1 {
+        height: unset;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main2 {
+        height: unset;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section.section2 .section2-main-container1 .inner ul li a {
+        padding: 20px 5px;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main1 {
+        height: unset;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main2 {
+        height: unset;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section.section2 .section2-main-container1 .inner ul li a {
+        padding: 20px 5px;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main1 {
+        height: unset;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main2 {
+        height: unset;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section.section2 .section2-main-container1 .inner ul li a {
+        padding: 20px 5px;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main1 {
+        height: unset;
+    }
+    section.section2 .section2-main-container1 .inner #tabs .main2 {
+        height: unset;
+    }
+}
