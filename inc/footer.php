@@ -49,7 +49,7 @@
                         </div>
                         <div class="col-md-2 mb-3">
                             <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">About Us</a>
+                                <a href="about_us.php">About Us</a>
                             </h6>
                         </div>
                         <div class="col-md-2 mb-3">
@@ -98,7 +98,7 @@
                 </div>
                 <!-- Copyright -->
                 <div class="footer-copyright text-center py-3">© 2018 Copyright :
-                    <a href="#!" style="color: var(--fit-orange-dark);"> S10.fit </a>
+                    <a href="http://www.s10.fit/" style="color: var(--fit-orange-dark);"> S10.fit </a>
                 </div>
                 <!-- Copyright -->
             </footer>

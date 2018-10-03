@@ -81,8 +81,8 @@ section.section2 .section2-main-container1 .inner #tabs {
     width: 100%;
     display: flex;
     position: relative;
-    margin: 0 auto;
-    height: 100%;
+    margin: 4% auto 0px;
+    height: 96%;
     overflow: hidden;
 }
 section.section2 .section2-main-container1 .inner #tabs .main1 {
@@ -110,7 +110,7 @@ section.section2 .section2-main-container1 .inner ul li a {
     width: 100%;
     text-decoration: none;
     color: #3b3b3b;
-    border-top: solid 2px #e9e9e9;
+    border-top: none;
     padding: 0px;
     z-index: 1;
     opacity: .5;
@@ -276,6 +276,11 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 576px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
+        border-top: solid 2px #e9e9e9;
+    }
+    section.section2 .section2-main-container1 .inner #tabs {
+        margin: 0px auto;
+        height: 100%;
     }
     section.section2 .section2-main-container1 .inner #tabs .main1 {
         height: unset;
@@ -288,6 +293,11 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 768px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
+        border-top: solid 2px #e9e9e9;
+    }
+    section.section2 .section2-main-container1 .inner #tabs {
+        margin: 0px auto;
+        height: 100%;
     }
     section.section2 .section2-main-container1 .inner #tabs .main1 {
         height: unset;
@@ -300,6 +310,11 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 992px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
+        border-top: solid 2px #e9e9e9;
+    }
+    section.section2 .section2-main-container1 .inner #tabs {
+        margin: 0px auto;
+        height: 100%;
     }
     section.section2 .section2-main-container1 .inner #tabs .main1 {
         height: unset;
@@ -312,6 +327,11 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 1200px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
+        border-top: solid 2px #e9e9e9;
+    }
+    section.section2 .section2-main-container1 .inner #tabs {
+        margin: 0px auto;
+        height: 100%;
     }
     section.section2 .section2-main-container1 .inner #tabs .main1 {
         height: unset;
