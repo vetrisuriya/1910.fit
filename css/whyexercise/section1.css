@@ -1,0 +1,211 @@
+/* //////////////////////////////////// section 2 ///////////////////////////////////////// */
+
+section.section1 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background: #ffffff;
+    height: var(--section1);
+    overflow: hidden;
+    position: relative;
+    color: var(--power-black-dark);
+}
+section.section1 > .row {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+section.section1 div.parent-wrapper {
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    letter-spacing: .5px;
+}
+
+section.section1 div.parent-wrapper p.text-indent {
+    text-indent: 30px;
+    font-size: 17px;
+}
+section.section1 div.parent-wrapper p.text-cap::first-letter {
+    font-size: 24px;
+}
+section.section1 div.parent-wrapper ul {
+    list-style-type: none;
+}
+section.section1 div.parent-wrapper ul li span {
+    margin-right: 10px;
+}
+
+
+section.section1 div.parent-wrapper div.whyExercise .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0px;
+}
+section.section1 div.parent-wrapper div.whyExercise .row div.col-md-4 {
+    margin: 0px auto;
+    padding: 5px;
+}
+section.section1 div.parent-wrapper div.whyExercise .row .content {
+    padding: .5rem;
+    border: 2px solid #b9e0ea;
+    border-radius: 4px;
+    text-align: center;
+    height: 320px;
+}
+section.section1 div.parent-wrapper div.whyExercise .row .content img {
+    width: 100%;
+}
+section.section1 div.parent-wrapper div.whyExercise .row .content .thumb {
+    height: 60%;
+}
+section.section1 div.parent-wrapper div.whyExercise .row .content .text {
+    height: 40%;
+    position: relative;
+}
+section.section1 div.parent-wrapper div.whyExercise .row .content .text p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+section.section1 div.parent-wrapper div.about1, section.section1 div.parent-wrapper div.about2 {
+    width: 100%;
+    height: 300px;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section1 div.parent-wrapper div.about1 div.inner, section.section1 div.parent-wrapper div.about2 div.inner {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px auto;
+}
+section.section1 div.parent-wrapper div.about1 div.inner {
+    background: url("http://www.s10.fit/img/s10.fit_map.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+section.section1 div.parent-wrapper div.about2 div.inner ul {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background: -moz-linear-gradient(95deg, rgba(17,114,156,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(17,114,156,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(95deg, #11729c 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(95deg, rgba(17,114,156,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(95deg, rgba(17,114,156,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+    background: linear-gradient(355deg, rgba(17,114,156,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+}
+section.section1 div.parent-wrapper div.about2 div.inner ul li {
+    height: calc(100% / 3);
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 2px solid #11729c;
+    display: block;
+}
+section.section1 div.parent-wrapper div.about2 div.inner ul li a {
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.section1 div.parent-wrapper div.whyExercise .row .content {
+        height: 260px;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .thumb {
+        height: 40%;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text {
+        height: 60%;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text p {
+        font-size: 90%;
+    }
+    section.section1 div.parent-wrapper div.about1, section.section1 div.parent-wrapper div.about2 {
+        height: 420px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section.section1 div.parent-wrapper div.whyExercise .row .content {
+        height: 260px;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .thumb {
+        height: 40%;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text {
+        height: 60%;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text p {
+        font-size: 90%;
+    }
+    section.section1 div.parent-wrapper div.about1, section.section1 div.parent-wrapper div.about2 {
+        height: 420px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section.section1 div.parent-wrapper div.whyExercise .row .content {
+        height: 280px;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .thumb {
+        height: unset;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text {
+        height: unset;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text p {
+        font-size: 100%;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+    section.section1 div.parent-wrapper div.about1, section.section1 div.parent-wrapper div.about2 {
+        height: 420px;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section.section1 div.parent-wrapper div.whyExercise .row .content {
+        height: 280px;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .thumb {
+        height: unset;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text {
+        height: unset;
+    }
+    section.section1 div.parent-wrapper div.whyExercise .row .content .text p {
+        font-size: 100%;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+    section.section1 div.parent-wrapper div.about1, section.section1 div.parent-wrapper div.about2 {
+        height: 420px;
+    }
+}

@@ -29,22 +29,22 @@
                     <div class="d-flex justify-content-center row text-center footer-nav">
                         <div class="col-md-2 mb-3">
                             <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">FAQ</a>
+                                <a href="faq.php">FAQ</a>
                             </h6>
                         </div>
                         <div class="col-md-2 mb-3">
                             <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">Forum</a>
+                                <a href="forum.php">Forum</a>
                             </h6>
                         </div>
                         <div class="col-md-2 mb-3">
                             <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">Support</a>
+                                <a href="support.php">Support</a>
                             </h6>
                         </div>
                         <div class="col-md-2 mb-3">
                             <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!">Why Exercise</a>
+                                <a href="why_exercise.php">Why Exercise</a>
                             </h6>
                         </div>
                         <div class="col-md-2 mb-3">
