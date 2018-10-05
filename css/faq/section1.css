@@ -1,0 +1,54 @@
+/* //////////////////////////////////// section 2 ///////////////////////////////////////// */
+
+section.section1 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background: #ffffff;
+    height: var(--section1);
+    overflow: hidden;
+    position: relative;
+    color: var(--power-black-dark);
+}
+section.section1 > .row {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+section.section1 div.parent-wrapper {
+    padding: 50px 0px;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+}
+
+section.section1 div.parent-wrapper ul {
+    list-style-type: none;
+    text-align: left;
+}
+section.section1 div.parent-wrapper ul li span {
+    margin-right: 10px;
+}
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}

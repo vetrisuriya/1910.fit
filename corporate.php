@@ -42,7 +42,7 @@
                         </div>
                         <div class="col-md-12 col-sm-12 section1-main-container1">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="#!">
+                                <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
                                     <span class="btn--svg__label">How Fit am I?</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">

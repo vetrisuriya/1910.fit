@@ -1,0 +1,228 @@
+/* //////////////////////////////////// section 2 ///////////////////////////////////////// */
+
+section.section1 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background: #ffffff;
+    height: var(--section1);
+    overflow: hidden;
+    position: relative;
+    color: var(--power-black-dark);
+}
+section.section1 > .row {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+section.section1 div.parent-wrapper {
+    padding: 50px 0px;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+}
+
+section.section1 div.parent-wrapper ul {
+    list-style-type: none;
+    text-align: left;
+}
+section.section1 div.parent-wrapper ul li span {
+    margin-right: 10px;
+}
+
+section.section1 div.parent-wrapper div.parent2 .comparison {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison td,
+section.section1 div.parent-wrapper div.parent2 .comparison th {
+    border-right: 1px solid var(--fit-orange-light);
+    empty-cells: show;
+    padding: 10px;
+    border-top: 1px solid var(--fit-orange-light);
+    border-bottom: 1px solid var(--fit-orange-light);
+    color: #808080;
+    font-size: 15px;
+    width: calc(100% / 4);
+}
+section.section1 div.parent-wrapper div.parent2 .comparison tbody tr:nth-child(odd) {
+    display: none;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .compare-row {
+    background: #F7F7F7;
+}
+section.section1 div.parent-wrapper div.parent2 .fa-check {
+    color:  var(--fit-orange-dark);
+}
+section.section1 div.parent-wrapper div.parent2 .comparison th {
+    font-weight: normal;
+    padding: 0;
+    border-top: 0px solid var(--fit-orange-light);
+    border-bottom: 0px solid var(--fit-orange-light);
+}
+section.section1 div.parent-wrapper div.parent2 .comparison tr td:first-child {
+    text-align: center;
+    padding: 15px;
+    border-left: 1px solid var(--fit-orange-light);
+    border-top: 1px solid var(--fit-orange-light);
+    color: var(--fit-orange-dark);
+    font-size: 20px;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .product,
+section.section1 div.parent-wrapper div.parent2 .comparison .tl {
+    color: #FFF;
+    padding: 10px;
+    font-size: 14px;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .tl2 {
+    border-right: 0;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .product {
+    background:  var(--fit-orange-dark);
+    height: 40px;
+    font-size: 1.4em;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .price-info {
+    padding: 15px;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .price-now,
+section.section1 div.parent-wrapper div.parent2 .comparison .price-now span {
+    color: #808080;
+}
+div.parent2 .comparison .price-now span {
+    font-size: 36px;
+    color: #545454;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .price-now p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 16px;
+    display: inline;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .price-buy {
+    background: #EC671A;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin: 5px 0 10px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+}
+section.section1 div.parent-wrapper div.parent2 .comparison .price-buy:hover {
+    background: #E84D00;
+}
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+    section.section1 div.parent-wrapper div.parent2 .table_ul li {
+        letter-spacing: 0px;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison .price-now span {
+        font-size: 32px;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison .price-now p {
+        display: block;
+    }
+}
+
+@media (max-width: 360px) {
+    section.section1 div.parent-wrapper div.parent2 .comparison
+    {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    section.section1 div.parent-wrapper div.parent2 .table_ul {
+        padding: 0px;
+    }
+    section.section1 div.parent-wrapper div.parent2 .table_ul li {
+        font-size: 10px;
+        line-height: 16px;
+        padding: 3px 0;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison {
+        max-width: 100%;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison td:first-child,
+    section.section1 div.parent-wrapper div.parent2 .comparison th:first-child {
+        display: none;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison tbody tr:nth-child(odd) {
+        display: table-row;
+        background: #F7F7F7;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison .row {
+        background: #FFF;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison td,
+    section.section1 div.parent-wrapper div.parent2 .comparison th {
+        border: 1px solid var(--fit-orange-light);
+        border-top: none;
+        padding: 10px 5px;
+        width: calc(100% / 3);
+    }
+    section.section1 div.parent-wrapper div.parent2 .price-info {
+        border-top: 0 !important;
+        padding: 10px 0 !important;
+    }
+    section.section1 div.parent-wrapper div.parent2 .price-info p {
+        line-height: 8px;
+        font-size: 8px !important;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison .compare-row {
+        background: #ffffff;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison .price-now p {
+        display: block;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison .price-now span {
+        font-size: 24px;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison .qbse {
+        font-size: 1.2em;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison td {
+        font-size: 14px;
+    }
+    section.section1 div.parent-wrapper div.parent2 .comparison th {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}

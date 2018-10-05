@@ -76,7 +76,7 @@
                         </div>
                         <div class="col-md-12 col-sm-12 section1-main-container1">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="#!">
+                                <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
                                     <span class="btn--svg__label">How Fit am I?</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
@@ -150,7 +150,7 @@
                     </div>
                     <div class="section2-main-container1">
                         <div class="inner">
-                            <a class="btn btn--svg js-animated-button" href="#!">
+                            <a class="btn btn--svg js-animated-button" href="./product_survey.php">
                                 <span class="btn--svg__label">S10.fit Right App?</span>
                                 <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                     enable-background="new 0 0 60 60">
@@ -222,7 +222,7 @@
                         </div>
                         <div class="section3-main-container1 col-sm-12 col-md-12">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="#!">
+                                <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
                                     <span class="btn--svg__label">How Fit am I?</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
@@ -412,7 +412,7 @@
                     </div>
                     <div class="section4-main-container1 col-sm-12 col-md-12">
                         <div class="inner">
-                            <a class="btn btn--svg js-animated-button" href="#!">
+                            <a class="btn btn--svg js-animated-button" href="./product_survey.php">
                                 <span class="btn--svg__label">S10.fit,Right App?</span>
                                 <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                     enable-background="new 0 0 60 60">
@@ -487,7 +487,7 @@
                         </div>
                         <div class="section5-main-container1 col-sm-12 col-md-12">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="#!">
+                                <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
                                     <span class="btn--svg__label">How Fit am I?</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">

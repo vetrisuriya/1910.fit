@@ -39,8 +39,8 @@
                         </div>
                         <div class="col-md-12 col-sm-12 section1-main-container1">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="#!">
-                                    <span class="btn--svg__label">How Fit am I?</span>
+                                <a class="btn btn--svg js-animated-button" href="./feature_comparison.php">
+                                    <span class="btn--svg__label">Feature Comparison</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
                                         <circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle>
