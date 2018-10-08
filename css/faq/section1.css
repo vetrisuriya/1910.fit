@@ -32,7 +32,10 @@ section.section1 div.parent-wrapper ul li span {
     margin-right: 10px;
 }
 
-
+section.section1 div.parent-wrapper div.parent2 div.accordion div.card div.card-header {
+    background-color: white;
+    border-bottom: 1px solid var(--fit-orange-dark);
+}
 
 
 
