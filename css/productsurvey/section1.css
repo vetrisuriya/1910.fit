@@ -127,14 +127,23 @@ section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pa
 section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .answer {
     font-size: 18px;
     text-indent: 10px;
-    height: 70%;
+    height: 30%;
 }
 section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .answer .radio {
-    height: calc(100% / 5);
+    height: calc(100% / 2);
     margin: 0px auto;
 }
 section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .answer .radio input {
     margin-right: 10px;
+}
+section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .desc {
+    font-size: 14px;
+    height: 40%;
+    color: var(--fit-orange-dark);
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-btn {
     position: absolute;
@@ -205,6 +214,9 @@ section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pa
         height: calc(100% - 100px);
         padding: 0px 10px;
     }
+    section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .desc { 
+        font-size: 16px;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -218,6 +230,9 @@ section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pa
         height: calc(100% - 100px);
         padding: 0px 10px;
     }
+    section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .desc { 
+        font-size: 16px;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -230,6 +245,9 @@ section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pa
     section.section1 div.main-inner div.inner div.wrap div.card .tab-content {
         height: calc(100% - 50px);
     }
+    section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .desc { 
+        font-size: 16px;
+    }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -241,5 +259,8 @@ section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pa
     }
     section.section1 div.main-inner div.inner div.wrap div.card .tab-content {
         height: calc(100% - 50px);
+    }
+    section.section1 div.main-inner div.inner div.wrap div.card .tab-content .tab-pane .tab-inner .desc { 
+        font-size: 16px;
     }
 }
