@@ -190,33 +190,30 @@
                             <div class="image-slideshow">
                                 <div id="myCarousel" class="carousel slide">
                                     <!-- Indicators -->
-                                    <ul class="carousel-indicators">
+                                    <!-- <ul class="carousel-indicators">
                                         <li class="item1 active"></li>
                                         <li class="item2"></li>
                                         <li class="item3"></li>
-                                    </ul>
+                                    </ul> -->
                                     <!-- The slideshow -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://cdn.lynda.com/course/594439/594439-636306184293610518-16x9.jpg"
-                                                alt="LosAngeles" width="1100" height="500">
+                                            <img src="./img/animated-image.png" alt="how-it-works-S10fit-image1">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="https://cdn.lynda.com/course/602457/602457-636306195826418934-16x9.jpg"
-                                                alt="Chicago" width="1100" height="500">
+                                            <img src="./img/animated-image.png" alt="how-it-works-S10fit-image2">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="https://cdn.lynda.com/course/590830/590830-636340800602156113-16x9.jpg"
-                                                alt="NewYork" width="1100" height="500">
+                                            <img src="./img/animated-image.png" alt="how-it-works-S10fit-image3">
                                         </div>
                                     </div>
                                     <!-- Left and right controls -->
-                                    <a class="carousel-control-prev" href="#!">
+                                    <!-- <a class="carousel-control-prev" href="#!">
                                         <span class="carousel-control-prev-icon"></span>
                                     </a>
                                     <a class="carousel-control-next" href="#!">
                                         <span class="carousel-control-next-icon"></span>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
