@@ -110,7 +110,6 @@ section.section2 .section2-main-container1 .inner ul li a {
     width: 100%;
     text-decoration: none;
     color: #3b3b3b;
-    border-top: none;
     padding: 0px;
     z-index: 1;
     opacity: .5;
@@ -226,10 +225,49 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul {
     height: 100%;
     width: 100%;
     margin: 0px auto;
-    padding: 20px;
+    padding: 10px;
     font-size: 100%;
 }
-
+section.section2 .section2-main-container1 .inner .inner ul .tab-inner {
+    height: 92%;
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner .inner ul .tab-btn {
+    height: 8%;
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+}
+section.section2 .section2-main-container1 .inner .inner ul .tab-btn a {
+    height: 100%;
+    width: 25%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--fit-orange-dark);
+    background: none;
+    color: var(--power-black-dark);
+    border-radius: 0px;
+}
+section.section2 .section2-main-container1 .inner .inner ul .tab-btn > a:nth-child(1) {
+    float: left;
+}
+section.section2 .section2-main-container1 .inner .inner ul .tab-btn > a:nth-child(2) {
+    float: right;
+}
+section.section2 .section2-main-container1 .inner .inner ul .tab-btn a:focus {
+    border: none;
+}
+section.section2 .section2-main-container1 .inner .inner ul .tab-btn a:active {
+    background: var(--fit-orange-dark);
+    color: white;
+    border: none;
+}
 section.section2 .section2-main-container1 .inner #tab-functions .inner ul li {
     height: calc(100% / 10);
     position: relative;
@@ -276,7 +314,6 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 576px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
-        border-top: solid 2px #e9e9e9;
     }
     section.section2 .section2-main-container1 .inner #tabs {
         margin: 0px auto;
@@ -293,7 +330,6 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 768px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
-        border-top: solid 2px #e9e9e9;
     }
     section.section2 .section2-main-container1 .inner #tabs {
         margin: 0px auto;
@@ -310,7 +346,6 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 992px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
-        border-top: solid 2px #e9e9e9;
     }
     section.section2 .section2-main-container1 .inner #tabs {
         margin: 0px auto;
@@ -327,7 +362,6 @@ section.section2 .section2-main-container1 .inner #tab-challenges .inner ul li s
 @media (min-width: 1200px) {
     section.section2 .section2-main-container1 .inner ul li a {
         padding: 20px 5px;
-        border-top: solid 2px #e9e9e9;
     }
     section.section2 .section2-main-container1 .inner #tabs {
         margin: 0px auto;
