@@ -12,7 +12,7 @@
 
     <!-- default styles -->
     <?php include("inc/styles.php"); ?>
-
+    <link rel='stylesheet' href='plugins/swiper/css/swiper.min.css'>
     <link rel="stylesheet" href="css/corporate/index.css">
 
 </head>
@@ -75,7 +75,7 @@
                     <div class="section2-main-container1">
                         <div class="inner">
                             <div class="inner-container1">
-                                <h3 class="text-center">Why should we enrol?</h3>
+                                <h3 class="text-center">Why should we enroll?</h3>
                             </div>
                             <div class="inner-container2">
                                 <div class="inner">
@@ -195,62 +195,57 @@
                                 <h3 class="text-center">S10.fit Enterprise</h3>
                             </div>
                             <div class="inner-container2">
-                                <div class="tab_container">
-                                    <input id="tab1" type="radio" name="tabs" checked>
-                                    <label for="tab1"><span>Portal Features</span></label>
-                                    <input id="tab2" type="radio" name="tabs">
-                                    <label for="tab2"><span>App Features</span></label>
-                                
-                                    <section id="content1" class="tab-content">
-                                        <div id="app" data-state="Good" class="list1">  
-                                            <ul>
-                                                <li>
-                                                    <div class="title">S10.fit enterprise portal is a self help tool to administer s10.fit app and the users</div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Subscription management</div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Employee on-boarding</div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Company branded health & wellbeing website with social media links </div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Wellness dashboard </div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Health screening campaign </div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Health centre management </div>
-                                                </li>
-                                            </ul>
+
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide portal-features">
+                                            <div class="row">
+                                                <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12 portal-features1">
+                                                    <img src="./img/animated-image.png" alt="portal-features-corporate-page-S10fit">
+                                                </div>
+                                                <div class="col-lg-7 col-md-6 col-sm-7 col-xs-12 portal-features2">
+                                                    <div class="inner">
+                                                        <div class="title">Portal Features</div>
+                                                        <div class="desc">S10.fit enterprise portal is a self help tool to administer. S10.fit app and the users</div>
+                                                        <div class="content">
+                                                            <ul>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Subscription management</li>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Employee on-boarding</li>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Wellness dashboard</li>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Reward program</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </section>
-                                
-                                    <section id="content2" class="tab-content">
-                                        <div id="app" data-state="Good" class="list2">  
-                                            <ul>
-                                                <li>
-                                                    <div class="title">Setup - Profile, PARQ screening, Physical activity assessment and goal setting </div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Exercise  - Daily exercise program, Choice of personal trainer bots and training by virtual BOT trainer for exercise sequence, repetition, intensity and progression </div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Diet -  Daily nutrition needs and foods to choose </div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Dash Boards -  Track and monitor progress on exercise and diet program</div>
-                                                </li>
-                                                <li>
-                                                    <div class="title">Challenges - 5 levels and 150 challenges to attain super human Fitness</div>
-                                                </li>
-                                            </ul>
-                                        </div> 
-                                    </section>
+                                        <div class="swiper-slide app-features">
+                                            <div class="row">
+                                                <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12 app-features1">
+                                                    <img src="./img/animated-image.png" alt="app-features-corporate-page-S10fit">
+                                                </div>
+                                                <div class="col-lg-7 col-md-6 col-sm-7 col-xs-12 app-features2">
+                                                    <div class="inner">
+                                                        <div class="title">App Features</div>
+                                                        <div class="desc">S10.fit App provides the essential tools for a healthy lifestyle of employees</div>
+                                                        <div class="content">
+                                                            <ul>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Exercise - Daily exercise program</li>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Diet - Daily nutrition needs and foods to choose</li>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Dashboard - Monitor progress in fitness, weight and health</li>
+                                                                <li><span>&#x21E8;</span>&nbsp;&nbsp;&nbsp;Challenges - Fun in exercise</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -347,10 +342,23 @@
 
         <!-- footer -->
         <?php include("inc/footer.php"); ?>
-
     </div>
 
-
     <?php include("inc/scripts.php"); ?>
+    <script src="plugins/swiper/js/swiper.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+        });
+    });
+    </script>
 </body>
 </html>
