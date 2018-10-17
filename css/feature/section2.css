@@ -269,15 +269,15 @@ section.section2 .section2-main-container1 .inner .inner ul .tab-btn a:active {
     border: none;
 }
 section.section2 .section2-main-container1 .inner #tab-functions .inner ul li {
-    height: calc(100% / 10);
+    height: calc(100% / 11);
     position: relative;
 }
 section.section2 .section2-main-container1 .inner #tab-personalised .inner ul li {
-    height: calc(100% / 10);
+    height: calc(100% / 11);
     position: relative;
 }
 section.section2 .section2-main-container1 .inner #tab-exercise .inner ul li {
-    height: calc(100% / 10);
+    height: calc(100% / 11);
     position: relative;
 }
 section.section2 .section2-main-container1 .inner #tab-diet .inner ul li {

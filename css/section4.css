@@ -88,7 +88,7 @@ section.section4 .parent-container1 {
     transform: scale(0);
 }
 .section4-main-container1 .inner a.btn--svg:hover .btn--svg__label {
-    color: var(--sweet-purple-dark);
+    color: var(--fit-orange-light);
 }
 .section4-main-container1 .inner a.btn--svg:hover .btn--svg__border--left path,
 .section4-main-container1 .inner a.btn--svg:hover .btn--svg__border--right path {
@@ -116,7 +116,7 @@ section.section4 .parent-container1 {
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: black;
     z-index: 3;
     width: 100%;
     transition: color 0.5s ease-in-out;

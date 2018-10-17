@@ -485,7 +485,7 @@ section.section2 .section2-main-container3 .inner .inner-container2 div.inner fo
     left: 50%;
     transform: translate(-50%, -50%);
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm label {
+section.section2 .section2-main-container3 .inner .inner-container2 form.partnerForm label {
     margin: 0.2rem 0px;
     color: var(--fit-orange-dark);
     font-weight: bold;
@@ -493,12 +493,12 @@ section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyo
     letter-spacing: 1px;
     font-size: 90%;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea {
+section.section2 .section2-main-container3 .inner .inner-container2 form.partnerForm input, section.section2 .section2-main-container3 .inner .inner-container2 form.partnerForm select, section.section2 .section2-main-container3 .inner .inner-container2 form.partnerForm textarea {
     outline: none;
     /* border: none; */
     border-radius: 0px;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea:focus {
+section.section2 .section2-main-container3 .inner .inner-container2 form.partnerForm input:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.partnerForm select:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.partnerForm textarea:focus {
     border-color: var(--fit-orange-dark);
     box-shadow: 0 0 0 0.1rem var(--fit-orange-dark);
 }

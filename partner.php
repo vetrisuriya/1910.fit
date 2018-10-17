@@ -40,7 +40,7 @@
                         <div class="col-md-12 col-sm-12 section1-main-container1">
                             <div class="inner">
                                 <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
-                                    <span class="btn--svg__label">How Fit am I?</span>
+                                    <span class="btn--svg__label">Enroll</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
                                         <circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle>
@@ -174,24 +174,24 @@
                             </div>
                             <div class="inner-container2">
                                 <div class="inner">
-                                    <form role="form" id="interestedForm" class="interestedForm">
+                                    <form role="form" id="partnerForm" class="partnerForm" autocomplete="off">
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 offset-lg-3 offset-md-3 offset-sm-2">
                                                 <div class="form-group">
-                                                    <label for="aboutyouName">Name</label>
-                                                    <input type="text" class="form-control" id="aboutyouName" placeholder="Enter Name" required="required">
+                                                    <label for="partnerName">Name</label>
+                                                    <input type="text" class="form-control" name="partnerName" id="partnerName" placeholder="Enter Name" required="required">
                                                 </div>    
                                                 <div class="form-group">
-                                                    <label for="aboutyouEmail">Email</label>
-                                                    <input type="email" class="form-control" id="aboutyouEmail" placeholder="Enter Email" required="required">
+                                                    <label for="partnerEmail">Email</label>
+                                                    <input type="email" class="form-control" name="partnerEmail" id="partnerEmail" placeholder="Enter Email" required="required">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="aboutyouMobilenum">Mobile Number</label>
-                                                    <input type="text" class="form-control" id="aboutyouMobilenum" placeholder="Mobile Number" required="required">
+                                                    <label for="partnerMobileNumber">Mobile Number</label>
+                                                    <input type="text" class="form-control" name="partnerMobileNumber" id="partnerMobileNumber" placeholder="Mobile Number" required="required">
                                                 </div> 
                                                 <div class="form-group">
-                                                    <label for="aboutyouOrganisationname">Organisation</label>
-                                                    <input type="text" class="form-control" id="aboutyouOrganisationname" placeholder="Organisation Name" required="required">
+                                                    <label for="partnerOrganisationName">Organisation</label>
+                                                    <input type="text" class="form-control" name="partnerOrganisationName" id="partnerOrganisationName" placeholder="Organisation Name" required="required">
                                                 </div>
                                                 <div class="form-group">
                                                     <button type="submit" class="form-control text-center" style="">Submit</button>

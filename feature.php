@@ -95,6 +95,7 @@
                                             <div class="inner">
                                                 <ul>
                                                     <div class="tab-inner">
+                                                        <li style="text-align: center;font-size: 22px;color: var(--fit-orange-dark);"><span><b>Functions</b></span></li>
                                                         <li><span><b>Fitness Journey</b> - Track progress in the fitness journey map.</span></li>
                                                         <li><span><b>Personalised</b> - To customize the App to your need.</span></li>
                                                         <li><span><b>Gate way</b> - Diet, Dashboard, Health and Challenges.</span></li>
@@ -115,6 +116,7 @@
                                             <div class="inner">
                                                 <ul>
                                                     <div class="tab-inner">
+                                                        <li style="text-align: center;font-size: 22px;color: var(--fit-orange-dark);"><span><b>Personalised</b></span></li>
                                                         <li><span><b>Profile</b> -  Assessments, Program information and your goal.</span></li>
                                                         <li><span><b>Status</b> - To check your current stage, level, challenges and METS earned.</span></li>
                                                         <li><span><b>Theme</b> - Change the colour of the app to suit your mood.</span></li>
@@ -137,6 +139,7 @@
                                             <div class="inner">
                                                 <ul>
                                                     <div class="tab-inner">
+                                                        <li style="text-align: center;font-size: 22px;color: var(--fit-orange-dark);"><span><b>Exercise</b></span></li>
                                                         <li><span><b>Today’s work out</b> - Your stage, level &amp; METs for the day.</span></li>
                                                         <li><span><b>Day</b> - Snapshot of the days equipments needed, activities &amp; time for the activities.</span></li>
                                                         <li><span><b>Day sliders</b> - To view previous and upcoming days workouts.</span></li>
@@ -159,6 +162,7 @@
                                             <div class="inner">
                                                 <ul>
                                                     <div class="tab-inner">
+                                                        <li style="text-align: center;font-size: 22px;color: var(--fit-orange-dark);"><span><b>Diet</b></span></li>
                                                         <li><span><b>Today’s nutrition</b> - The day’s meal plan and nutrional value for each meal.</span></li>
                                                         <li><span><b>Meal nutrition</b> - For each meal calories, carbs, proteins and fat recommended.</span></li>
                                                         <li><span><b>Meal for the day</b> - Add the food you plan to consume for the day.</span></li>
@@ -177,6 +181,7 @@
                                             <div class="inner">
                                                 <ul>
                                                     <div class="tab-inner">
+                                                        <li style="text-align: center;font-size: 22px;color: var(--fit-orange-dark);"><span><b>Dashboard</b></span></li>
                                                         <li><span><b>Planned Vs Actual Progress</b> - Frequency, Duration, Intensity, Stage, Level &amp; METS.</span></li>
                                                         <li><span><b>Planned Vs Actual Fitness</b> - Flexibility, Endurance &amp; Strengthening.</span></li>
                                                         <li><span><b>Planned Vs Actuals Weight</b> - Calories &amp; Weight.</span></li>
@@ -193,6 +198,7 @@
                                             <div class="inner">
                                                 <ul>
                                                     <div class="tab-inner">
+                                                        <li style="text-align: center;font-size: 22px;color: var(--fit-orange-dark);"><span><b>Health</b></span></li>
                                                         <li><span><b>Vitals</b> - To capture blood pressure, blood sugar, pulse rate, respiratory rate, body temperature and weight daily.</span></li>
                                                         <li><span><b>Store</b> - To buy fitness and health products.</span></li>
                                                         <li><span><b>Health cloud</b> - To store and retrieve health records.</span></li>
@@ -208,6 +214,7 @@
                                             <div class="inner">
                                                 <ul>
                                                     <div class="tab-inner">
+                                                        <li style="text-align: center;font-size: 22px;color: var(--fit-orange-dark);"><span><b>Challenges</b></span></li>
                                                         <li><span><b>Today’s challenge</b> - The stage, level &amp; METS to be earned from the current challenge.</span></li>
                                                         <li><span><b>Level challenge</b> - The equipments needed, number of activities &amp; time for executing the challenge.</span></li>
                                                         <li><span><b>Challenge for the day</b> - Details of activities for the days challenge.</span></li>

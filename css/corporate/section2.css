@@ -353,7 +353,7 @@ section.section2 .section2-main-container2 .inner .inner-container2 .swiper-cont
 }
 section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features2 .content, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features2 .content {
     text-align: left;
-    padding-left: 30px;
+    padding-left: 15px;
 }
 section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide ul {
     list-style-type: none;
@@ -401,6 +401,9 @@ section.section2 .section2-main-container2 .inner .inner-container2 .swiper-cont
     section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features1 img, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features1 img {
         width: 270%;
     }
+    section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features2 .content, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features2 .content {
+        padding-left: 30px;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -425,6 +428,9 @@ section.section2 .section2-main-container2 .inner .inner-container2 .swiper-cont
     }
     section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features1 img, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features1 img {
         width: 270%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features2 .content, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features2 .content {
+        padding-left: 30px;
     }
 }
 /* Large devices (desktops, 992px and up) */
@@ -451,6 +457,9 @@ section.section2 .section2-main-container2 .inner .inner-container2 .swiper-cont
     section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features1 img, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features1 img {
         width: 270%;
     }
+    section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features2 .content, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features2 .content {
+        padding-left: 30px;
+    }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -475,6 +484,9 @@ section.section2 .section2-main-container2 .inner .inner-container2 .swiper-cont
     }
     section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features1 img, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features1 img {
         width: 270%;
+    }
+    section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.portal-features .portal-features2 .content, section.section2 .section2-main-container2 .inner .inner-container2 .swiper-container .swiper-slide.app-features .app-features2 .content {
+        padding-left: 30px;
     }
 }
 
@@ -542,7 +554,7 @@ section.section2 .section2-main-container3 .inner .inner-container2 div.containe
     margin-bottom: unset;
     height: calc(100% / 6);
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm label {
+section.section2 .section2-main-container3 .inner .inner-container2 form.corporateForm label {
     margin: 0.2rem 0px;
     color: var(--fit-orange-dark);
     font-weight: bold;
@@ -550,12 +562,12 @@ section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyo
     letter-spacing: 1px;
     font-size: 90%;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea {
+section.section2 .section2-main-container3 .inner .inner-container2 form.corporateForm input, section.section2 .section2-main-container3 .inner .inner-container2 form.corporateForm select, section.section2 .section2-main-container3 .inner .inner-container2 form.corporateForm textarea {
     outline: none;
     /* border: none; */
     border-radius: 0px;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea:focus {
+section.section2 .section2-main-container3 .inner .inner-container2 form.corporateForm input:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.corporateForm select:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.corporateForm textarea:focus {
     border-color: var(--fit-orange-dark);
     box-shadow: 0 0 0 0.1rem var(--fit-orange-dark);
 }

@@ -125,6 +125,12 @@ section.section5 .section5-main-container .content .inner.row > div .card {
     height: 100%;
     width: 100%;
     margin: 0px auto;
+    transition: all .8s;
+    box-shadow: inset 0px 0px 6px 0px black;
+    user-select: none;
+}
+section.section5 .section5-main-container .content .inner.row > div .card:hover {
+    box-shadow: inset 0px 0px 24px 0px black;
 }
 section.section5 .section5-main-container .content .inner.row .card .card-block {
     height: 100%;
@@ -178,7 +184,7 @@ section.section5 .section5-main-container .content .inner.row .card .card-block 
     transform: scale(0);
 }
 .section5-main-container1 .inner a.btn--svg:hover .btn--svg__label {
-    color: var(--humble-red-dark);
+    color: var(--fit-orange-light);
 }
 .section5-main-container1 .inner a.btn--svg:hover .btn--svg__border--left path,
 .section5-main-container1 .inner a.btn--svg:hover .btn--svg__border--right path {

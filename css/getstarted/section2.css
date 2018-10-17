@@ -488,7 +488,7 @@ section.section2 .section2-main-container3 .inner .inner-container2 div.inner fo
 }
 section.section2 .section2-main-container3 .inner .inner-container2 div.inner form div.row div.form-group {
     margin-bottom: unset;
-    height: calc(100% / 5);
+    height: calc(100% / 6);
     position: relative;
 }
 section.section2 .section2-main-container3 .inner .inner-container2 div.inner form div.row div.form-group button {
@@ -500,7 +500,7 @@ section.section2 .section2-main-container3 .inner .inner-container2 div.inner fo
     left: 50%;
     transform: translate(-50%, -50%);
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm label {
+section.section2 .section2-main-container3 .inner .inner-container2 form.individualForm label {
     margin: 0.2rem 0px;
     color: var(--fit-orange-dark);
     font-weight: bold;
@@ -508,12 +508,12 @@ section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyo
     letter-spacing: 1px;
     font-size: 90%;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea {
+section.section2 .section2-main-container3 .inner .inner-container2 form.individualForm input, section.section2 .section2-main-container3 .inner .inner-container2 form.individualForm select, section.section2 .section2-main-container3 .inner .inner-container2 form.individualForm textarea {
     outline: none;
     /* border: none; */
     border-radius: 0px;
 }
-section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm input:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm select:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.aboutyouForm textarea:focus {
+section.section2 .section2-main-container3 .inner .inner-container2 form.individualForm input:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.individualForm select:focus, section.section2 .section2-main-container3 .inner .inner-container2 form.individualForm textarea:focus {
     border-color: var(--fit-orange-dark);
     box-shadow: 0 0 0 0.1rem var(--fit-orange-dark);
 }

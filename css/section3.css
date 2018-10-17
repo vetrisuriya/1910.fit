@@ -195,7 +195,7 @@ section.section3 .parent-container2 .row > div {
     transform: scale(0);
 }
 .section3-main-container1 .inner a.btn--svg:hover .btn--svg__label {
-    color: var(--eco-green-dark);
+    color: var(--fit-orange-light);
 }
 .section3-main-container1 .inner a.btn--svg:hover .btn--svg__border--left path,
 .section3-main-container1 .inner a.btn--svg:hover .btn--svg__border--right path {

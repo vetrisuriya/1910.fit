@@ -43,7 +43,7 @@
                         <div class="col-md-12 col-sm-12 section1-main-container1">
                             <div class="inner">
                                 <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
-                                    <span class="btn--svg__label">How Fit am I?</span>
+                                    <span class="btn--svg__label">Enroll</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
                                         <circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle>
@@ -258,32 +258,32 @@
                             </div>
                             <div class="inner-container2">
                                 <div class ="container">
-                                    <form role="form" id="aboutyouForm" class="aboutyouForm">
+                                    <form role="form" id="corporateForm" class="corporateForm" autocomplete="off">
                                         <div class="row form1">
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="form-group">
-                                                    <label for="aboutyouName">Name</label>
-                                                    <input type="text" class="form-control" id="aboutyouName" placeholder="Enter Name" required="required">
+                                                    <label for="corporateName">Name</label>
+                                                    <input type="text" class="form-control" name="corporateName" id="corporateName" placeholder="Enter Name" required="required">
                                                 </div>    
                                                 <div class="form-group">
-                                                    <label for="aboutyouEmail">Email</label>
-                                                    <input type="email" class="form-control" id="aboutyouEmail" placeholder="Enter Email" required="required">
+                                                    <label for="corporateEmail">Email</label>
+                                                    <input type="email" class="form-control" name="corporateEmail" id="corporateEmail" placeholder="Enter Email" required="required">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="aboutyouMobilenum">Mobile Number</label>
-                                                    <input type="text" class="form-control" id="aboutyouMobilenum" placeholder="Mobile Number" required="required">
+                                                    <label for="corporateMobileNumber">Mobile Number</label>
+                                                    <input type="text" class="form-control" name="corporateMobileNumber" id="corporateMobileNumber" placeholder="Mobile Number" required="required">
                                                 </div> 
                                                 <div class="form-group">
-                                                    <label for="aboutyouOfficenum">Office Number</label>
-                                                    <input type="text" class="form-control" id="aboutyouOfficenum" placeholder="Office Number" required="required">
+                                                    <label for="corporateOfficeNumber">Office Number</label>
+                                                    <input type="text" class="form-control" name="corporateOfficeNumber" id="corporateOfficeNumber" placeholder="Office Number" required="required">
                                                 </div>   
                                                 <div class="form-group">
-                                                    <label for="aboutyouOrganisationname">Organisation</label>
-                                                    <input type="text" class="form-control" id="aboutyouOrganisationname" placeholder="Organisation Name" required="required">
+                                                    <label for="corporateOrganisationName">Organisation</label>
+                                                    <input type="text" class="form-control" name="corporateOrganisationName" id="corporateOrganisationName" placeholder="Organisation Name" required="required">
                                                 </div>    
                                                 <div class="form-group">
-                                                    <label for="aboutyouOrganisationtype">Organisation Type</label>
-                                                    <select name="" id="aboutyouOrganisationtype" class="form-control" required="required">
+                                                    <label for="corporateOrganisationType">Organisation Type</label>
+                                                    <select name="corporateOrganisationType" id="corporateOrganisationType" class="form-control" required="required">
                                                         <option value="" label="Select Type">Select Type</option>
                                                         <option value="1000+" label="Large - 1000 + people ">Large - 1000 + people </option>
                                                         <option value="500-999" label="Medium - 500 to 999 people">Medium - 500 to 999 people </option>
@@ -294,28 +294,28 @@
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="form-group">
-                                                    <label for="aboutyouAddress">Address</label>
-                                                    <input type="text" class="form-control" id="aboutyouAddress" placeholder="Enter Main Address" required="required">
+                                                    <label for="corporateAddress">Address</label>
+                                                    <input type="text" class="form-control" name="corporateAddress" id="corporateAddress" placeholder="Enter Main Address" required="required">
                                                 </div>    
                                                 <div class="form-group">
-                                                    <label for="aboutyouAddress1">Sub Address</label>
-                                                    <input type="text" class="form-control" id="aboutyouAddress1" placeholder="Enter Sub Address" required="required">
+                                                    <label for="corporateSubAddress">Sub Address</label>
+                                                    <input type="text" class="form-control" name="corporateSubAddress" id="corporateSubAddress" placeholder="Enter Sub Address" required="required">
                                                 </div>   
                                                 <div class="form-group">
-                                                    <label for="aboutyouCity">City</label>
-                                                    <input type="text" class="form-control" id="aboutyouCity" placeholder="Enter City" required="required">
+                                                    <label for="corporateCity">City</label>
+                                                    <input type="text" class="form-control" name="corporateCity" id="corporateCity" placeholder="Enter City" required="required">
                                                 </div> 
                                                 <div class="form-group">
-                                                    <label for="aboutyouZipcode">Zip Code</label>
-                                                    <input type="text" class="form-control" id="aboutyouZipcode" placeholder="Enter Zip Code" required="required">
+                                                    <label for="corporateZipCode">Zip Code</label>
+                                                    <input type="text" class="form-control" name="corporateZipCode" id="corporateZipCode" placeholder="Enter Zip Code" required="required">
                                                 </div>   
                                                 <div class="form-group">
-                                                    <label for="aboutyouState">State/Region</label>
-                                                    <input type="text" class="form-control" id="aboutyouState" placeholder="Enter State/Region" required="required">
+                                                    <label for="corporateState">State/Region</label>
+                                                    <input type="text" class="form-control" name="corporateState" id="corporateState" placeholder="Enter State/Region" required="required">
                                                 </div>    
                                                 <div class="form-group">
-                                                    <label for="aboutyouCountry">Country</label>
-                                                    <select name="" id="aboutyouCountry" class="form-control" required="required">
+                                                    <label for="corporateCountry">Country</label>
+                                                    <select name="corporateCountry" id="corporateCountry" class="form-control" required="required">
                                                         <option value="" label="Select Country">Select Country</option>
                                                         <option value="india" label="India">India</option>
                                                         <option value="srilanka" label="Srilanka">Srilanka</option>

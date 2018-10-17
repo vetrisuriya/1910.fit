@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="plugins/flat-video-player/video.css">
 
-
 </head>
 <body>
 
     <!-- navbar -->
     <?php include("inc/navbar.php"); ?>
+        
 
     <div class="main-container">
 
@@ -77,7 +77,7 @@
                         <div class="col-md-12 col-sm-12 section1-main-container1">
                             <div class="inner">
                                 <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
-                                    <span class="btn--svg__label">How Fit am I?</span>
+                                    <span class="btn--svg__label">Enroll</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
                                         <circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle>
@@ -219,19 +219,19 @@
                         </div>
                         <div class="section3-main-container1 col-sm-12 col-md-12">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
-                                    <span class="btn--svg__label">How Fit am I?</span>
+                                <a class="btn btn--svg js-animated-button" href="./feature_comparison.php">
+                                    <span class="btn--svg__label">Feature Comparison</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
-                                        <circle class="js-discover-circle" fill="#5FA281" cx="30" cy="30" r="28.7"></circle>
+                                        <circle class="js-discover-circle" fill="#FFAE4F" cx="30" cy="30" r="28.7"></circle>
                                     </svg>
                                     <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
                                         enable-background="new 2 29.3 56.9 13.4" width="190">
                                         <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                            <path fill="none" stroke="#5FA281" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
+                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
                                         </g>
                                         <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                            <path fill="none" stroke="#5FA281" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
+                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
                                         </g>
                                     </svg>
                                 </a>
@@ -413,15 +413,15 @@
                                 <span class="btn--svg__label">S10.fit,Right App?</span>
                                 <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                     enable-background="new 0 0 60 60">
-                                    <circle class="js-discover-circle" fill="#59408D" cx="30" cy="30" r="28.7"></circle>
+                                    <circle class="js-discover-circle" fill="#FFAE4F" cx="30" cy="30" r="28.7"></circle>
                                 </svg>
                                 <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
                                     enable-background="new 2 29.3 56.9 13.4" width="190">
                                     <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                        <path fill="none" stroke="#59408D" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
+                                        <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
                                     </g>
                                     <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                        <path fill="none" stroke="#59408D" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
+                                        <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
                                     </g>
                                 </svg>
                             </a>
@@ -485,18 +485,18 @@
                         <div class="section5-main-container1 col-sm-12 col-md-12">
                             <div class="inner">
                                 <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
-                                    <span class="btn--svg__label">How Fit am I?</span>
+                                    <span class="btn--svg__label">Enroll</span>
                                     <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
                                         enable-background="new 0 0 60 60">
-                                        <circle class="js-discover-circle" fill="#FF7979" cx="30" cy="30" r="28.7"></circle>
+                                        <circle class="js-discover-circle" fill="#FFAE4F" cx="30" cy="30" r="28.7"></circle>
                                     </svg>
                                     <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
                                         enable-background="new 2 29.3 56.9 13.4" width="190">
                                         <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                            <path fill="none" stroke="#FF7979" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
+                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
                                         </g>
                                         <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                            <path fill="none" stroke="#FF7979" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
+                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
                                         </g>
                                     </svg>
                                 </a>
@@ -568,6 +568,12 @@
         <?php include("inc/footer.php"); ?>
 
     </div>
+
+    <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
     <?php include("inc/scripts.php"); ?>
