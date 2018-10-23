@@ -3,5 +3,4 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    
+    <link rel="stylesheet" href="./plugins/animate/animate.min.css">

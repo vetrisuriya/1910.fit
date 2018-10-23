@@ -38,13 +38,13 @@
     --section3-parent-container1-768: 20%;
     --section3-parent-container3-768: 20%;
     --section3-parent-container2-768: calc(calc(var(--section3-768) - var(--section3-parent-container1-768)) - var(--section3-parent-container3-768));
-    --section3-576: 140vh;
+    --section3-576: 150vh;
     --section3-parent-container1-576: 18%;
     --section3-parent-container3-576: 18%;
     --section3-parent-container2-576: calc(calc(var(--section3-576) - var(--section3-parent-container1-576)) - var(--section3-parent-container3-576));
-    --section3: 130vh;
-    --section3-parent-container1: 16%;
-    --section3-parent-container3: 16%;
+    --section3: 150vh;
+    --section3-parent-container1: 12%;
+    --section3-parent-container3: 12%;
     --section3-parent-container2: calc(calc(var(--section3) - var(--section3-parent-container1)) - var(--section3-parent-container3));
 
     /* section 4 variables */

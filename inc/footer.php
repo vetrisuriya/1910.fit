@@ -58,10 +58,10 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="pt-4 row text-center footer-social-nav">
+                    <div class="row text-center footer-social-nav">
                         <!-- Grid column -->
                         <div class="col-md-12">
-                            <div class="mb-5 flex-center">
+                            <div class="flex-center">
                                 <!-- Facebook -->
                                 <a class="fb-ic" href="#">
                                     <i class="fa fa-facebook fa-lg white-text mr-4"></i>

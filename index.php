@@ -76,22 +76,7 @@
                         </div>
                         <div class="col-md-12 col-sm-12 section1-main-container1">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
-                                    <span class="btn--svg__label">Enroll</span>
-                                    <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
-                                        enable-background="new 0 0 60 60">
-                                        <circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle>
-                                    </svg>
-                                    <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
-                                        enable-background="new 2 29.3 56.9 13.4" width="190">
-                                        <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                            <path fill="none" stroke="#FFF" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
-                                        </g>
-                                        <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                            <path fill="none" stroke="#FFF" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
-                                        </g>
-                                    </svg>
-                                </a>
+                                <a class="action-button animate fit-orange" href="./fitness_survey.php">Review your current fitness level?</a>
                             </div>
                         </div>
                     </div>
@@ -106,15 +91,9 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1 parent-container1">
                     <div class="section2-main-container col-md-12 col-sm-12">
-                        <div class="header">
-                            "<strong>Transforming</strong>,the way you get <strong>Fit</strong>"
-                        </div>
-                        <div class="header1">
-                            Save time, Reduce resistance & Break all barrier to Exercise.
-                        </div>
-                        <div class="header2">
-                            No COACH dependency. No Equipments. No Internet. No Gym.
-                        </div>
+                        <div class="header">"<strong>Try</strong> the most remarkably intuitive <strong>fitness App</strong>"</div>
+                        <div class="header1">Save time, easy to execute and real outcomes.</div>
+                        <br><br>
                         <div class="video-player">
                             <div id="videoContainer" class="videoContainer">
                                 <div class="overlay">
@@ -150,22 +129,7 @@
                     </div>
                     <div class="section2-main-container1">
                         <div class="inner">
-                            <a class="btn btn--svg js-animated-button" href="./product_survey.php">
-                                <span class="btn--svg__label">S10.fit Right App?</span>
-                                <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
-                                    enable-background="new 0 0 60 60">
-                                    <circle class="js-discover-circle" fill="#FFAE4F" cx="30" cy="30" r="28.7"></circle>
-                                </svg>
-                                <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
-                                    enable-background="new 2 29.3 56.9 13.4" width="190">
-                                    <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                        <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
-                                    </g>
-                                    <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                        <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
-                                    </g>
-                                </svg>
-                            </a>
+                            <a class="action-button animate fit-orange" href="./product_survey.php">Is S10.fit the right product for you ?</a>
                         </div>
                     </div>
                 </div>
@@ -178,63 +142,110 @@
             <div class="parent-container1"></div>
             <div class="parent-container2">
                 <div class="row">
-                    <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1">
+                    <div class="col-lg-10 col-md-10 col-sm-12 offset-lg-1 offset-md-1">
                         <div class="section3-main-container col-md-12 col-sm-12">
-                            <div class="header">
-                                <strong>How</strong> it <strong>Works?</strong>
-                            </div>
-                            <div class="header1">
-                                Autonomous fitness program that is simple to adopt, takes less time to execute and
-                                provides the best outcome
-                            </div>
-                            <div class="image-slideshow">
-                                <div id="myCarousel" class="carousel slide">
-                                    <!-- Indicators -->
-                                    <!-- <ul class="carousel-indicators">
-                                        <li class="item1 active"></li>
-                                        <li class="item2"></li>
-                                        <li class="item3"></li>
-                                    </ul> -->
-                                    <!-- The slideshow -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="./img/animated-image.png" alt="how-it-works-S10fit-image1">
+                            <div class="inner">
+                                <div class="header"><strong>How</strong> it <strong>Works?</strong></div>
+                                <div class="header1">5 simple steps to a stunning life</div>
+                                <div class="image-slideshow">
+                                    <div id="myCarousel" class="carousel slide">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 img-box">
+                                                        <img src="./img/animated-image.png" alt="how-it-works-S10fit-image1">
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 img-content">
+                                                        <div class="inner">
+                                                            <h3 class="animated slideInRight">S10.fit for Individuals</h3>
+                                                            <p class="animated slideInRight delay-1s"><span>&#x27A0;</span>S10.fit is the ultimate tool for people at a turning point in fitness routine to stay healthy, avoid diseases, live long, be young and perform better. Sign up for 1 month free trial.</p>
+                                                            <h3 class="animated slideInRight delay-2s">S10.fit for Corporates</h3>
+                                                            <p class="animated slideInRight delay-3s"><span>&#x27A0;</span>Organisations play a critical role in employee’s well-being, as a major portion of an individual’s time is at workplace. S10.fit will be a great value enhancer for you and your employees.</p>
+                                                            <h3 class="animated slideInRight delay-4s">S10.fit for Partners</h3>
+                                                            <p class="animated slideInRight delay-5s"><span>&#x27A0;</span>S10.fit offers great partnership opportunities for doctors, corporate trainers and fitness trainer to provide suitable fitness program to improve treatment efficacy, wellness or performance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 img-box">
+                                                        <img src="./img/animated-image.png" alt="how-it-works-S10fit-image2">
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 img-content">
+                                                        <div class="inner">
+                                                            <h3>Personal Wellbeing Pathway</h3>
+                                                            <p class="animated slideInRight delay-1s"><span>&#x27A0;</span>Assessing where you are now to set a pathway to advance from current lifestyle to a regularly active lifestyle.</p>
+                                                            <p class="animated slideInRight delay-2s"><span>&#x27A0;</span>Defining success through life changing goals that motivates to pursue the fitness journey.</p>
+                                                            <p class="animated slideInRight delay-3s"><span>&#x27A0;</span>Establishing priorities by converting goals to SMART activities.</p>
+                                                            <p class="animated slideInRight delay-4s"><span>&#x27A0;</span>Taking control of your life with recommended personalised wellbeing pathway.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 img-box">
+                                                        <img src="./img/animated-image.png" alt="how-it-works-S10fit-image3">
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 img-content">
+                                                        <div class="inner">
+                                                            <h3>Personalised program that is simple to adopt and takes less time to execute</h3>
+                                                            <p class="animated slideInRight delay-1s"><span>&#x27A0;</span>Effective Programs by the minute designed for novice to experienced sports person with 4 stages and 48 levels.</p>
+                                                            <p class="animated slideInRight delay-2s"><span>&#x27A0;</span>Functional Exercises that is gradual, easy and painless.</p>
+                                                            <p class="animated slideInRight delay-3s"><span>&#x27A0;</span>Nutrition recommedation for the day with calorie, protien, carbs, and fat values for each meal.</p>
+                                                            <p class="animated slideInRight delay-4s"><span>&#x27A0;</span>Self help tools to preview and prepare even a novice to exercise perfectly.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 img-box">
+                                                        <img src="./img/animated-image.png" alt="how-it-works-S10fit-image4">
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 img-content">
+                                                        <div class="inner">
+                                                            <h3>Work out confidently with virtual trainers at your convenient time</h3>
+                                                            <p class="animated slideInRight delay-1s"><span>&#x27A0;</span>Personal virtual BOT trainers to support the pivotal moments while exercising like sequence, count, intensity and sets.</p>
+                                                            <p class="animated slideInRight delay-2s"><span>&#x27A0;</span>Practise to perfection by previewing the workout activities and rehearsing to eliminate fear and greatly increase the chance of success.</p>
+                                                            <p class="animated slideInRight delay-3s"><span>&#x27A0;</span>Challenge the fitBOT's to understand your improvements in flexibility, muscular, aerobic and functional fitness.</p>
+                                                            <p class="animated slideInRight delay-4s"><span>&#x27A0;</span>Make exercise interesting with music and exciting backgrounds.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 img-box">
+                                                        <img src="./img/animated-image.png" alt="how-it-works-S10fit-image5">
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 img-content">
+                                                        <div class="inner">
+                                                            <h3>Monitor progress in fitness journey</h3>
+                                                            <p class="animated slideInRight delay-1s"><span>&#x27A0;</span>Progress in duration, intensity, frequency, level and METS earned.</p>
+                                                            <p class="animated slideInRight delay-2s"><span>&#x27A0;</span>Fitness improvement in aerobic, strength and flexibity.</p>
+                                                            <p class="animated slideInRight delay-3s"><span>&#x27A0;</span>Weight movements and calorie consumption.</p>
+                                                            <p class="animated slideInRight delay-4s"><span>&#x27A0;</span>Health parameters like heart rate, blood pressure, sugar, SPO2, temperature and weight.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="./img/animated-image.png" alt="how-it-works-S10fit-image2">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./img/animated-image.png" alt="how-it-works-S10fit-image3">
-                                        </div>
+                                        <!-- Left and right controls -->
+                                        <a class="carousel-control-prev" href="#!">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#!">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </a>
                                     </div>
-                                    <!-- Left and right controls -->
-                                    <!-- <a class="carousel-control-prev" href="#!">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#!">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </a> -->
                                 </div>
                             </div>
                         </div>
                         <div class="section3-main-container1 col-sm-12 col-md-12">
                             <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="./feature_comparison.php">
-                                    <span class="btn--svg__label">Feature Comparison</span>
-                                    <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
-                                        enable-background="new 0 0 60 60">
-                                        <circle class="js-discover-circle" fill="#FFAE4F" cx="30" cy="30" r="28.7"></circle>
-                                    </svg>
-                                    <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
-                                        enable-background="new 2 29.3 56.9 13.4" width="190">
-                                        <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
-                                        </g>
-                                        <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
-                                        </g>
-                                    </svg>
-                                </a>
+                                <a class="action-button animate fit-orange" href="./feature_comparison.php">Feature Comparison</a>
                             </div>
                         </div>
                     </div>
@@ -242,6 +253,12 @@
             </div>
             <div class="parent-container3"></div>
         </section>
+
+        <style>
+        .delay-1s {
+            animation-delay: 1s;
+        }
+        </style>
 
 
         <!-- section 4 -->
@@ -408,23 +425,8 @@
                         </div>
                     </div>
                     <div class="section4-main-container1 col-sm-12 col-md-12">
-                        <div class="inner">
-                            <a class="btn btn--svg js-animated-button" href="./product_survey.php">
-                                <span class="btn--svg__label">S10.fit,Right App?</span>
-                                <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
-                                    enable-background="new 0 0 60 60">
-                                    <circle class="js-discover-circle" fill="#FFAE4F" cx="30" cy="30" r="28.7"></circle>
-                                </svg>
-                                <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
-                                    enable-background="new 2 29.3 56.9 13.4" width="190">
-                                    <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                        <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
-                                    </g>
-                                    <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                        <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
-                                    </g>
-                                </svg>
-                            </a>
+                        <div class="inner" style="width: fit-content; margin: 0px auto;">
+                            <a class="action-button animate fit-orange" href="./product_survey.php">Is S10.fit the right product for you ?</a>
                         </div>
                     </div>
                 </div>
@@ -443,7 +445,7 @@
                                 "<strong>NOW </strong> EVERYONE CAN <strong> EXERCISE</strong>"
                             </div>
                             <div class="header1">
-                                With 160 exercisers to work every muscle in your body s10.fits programs has simple yet amazingly effective regime to get you into the best shape of your life.
+                                With 160 exercisers to work every muscle in your body S10.fit programs has simple yet amazingly effective regime to get you into the best shape of your life.
                             </div>
                             <div class="content">
                                 <div class="inner row">
@@ -483,23 +485,8 @@
                             </div>
                         </div>
                         <div class="section5-main-container1 col-sm-12 col-md-12">
-                            <div class="inner">
-                                <a class="btn btn--svg js-animated-button" href="./fitness_survey.php">
-                                    <span class="btn--svg__label">Enroll</span>
-                                    <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
-                                        enable-background="new 0 0 60 60">
-                                        <circle class="js-discover-circle" fill="#FFAE4F" cx="30" cy="30" r="28.7"></circle>
-                                    </svg>
-                                    <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none" viewBox="2 29.3 56.9 13.4"
-                                        enable-background="new 2 29.3 56.9 13.4" width="190">
-                                        <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
-                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
-                                        </g>
-                                        <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
-                                            <path fill="none" stroke="#FFAE4F" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
-                                        </g>
-                                    </svg>
-                                </a>
+                            <div class="inner" style="width: fit-content; margin: 0px auto;">
+                                <a class="action-button animate fit-orange" href="./fitness_survey.php">Review your current fitness level?</a>
                             </div>
                         </div>
                     </div>
@@ -549,16 +536,15 @@
                     </div>
                 </div>
                 <div class="section6-main-container4">
-                    <!-- InstaWidget -->
-                    <a href="https://instawidget.net/v/user/s10.fit_app" id="link-346451931c6e0b52f79c4f06ca72ab259951022a33e6eb2c57e23a53fe18c6db">@s10.fit_app</a>
-                    <script src="https://instawidget.net/js/instawidget.js?u=346451931c6e0b52f79c4f06ca72ab259951022a33e6eb2c57e23a53fe18c6db&width=300px"></script>
+                    <a href="https://instawidget.net/v/user/s10.fit_app" id="link-256f0622098b2ae7053f6bb4bbdf24036d0c6d266543e2c58f5a23b19537ff05">@s10.fit_app</a>
+                    <script src="https://instawidget.net/js/instawidget.js?u=256f0622098b2ae7053f6bb4bbdf24036d0c6d266543e2c58f5a23b19537ff05&width=px"></script>
                 </div>
                 <div class="section6-main-container2">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fs10fitnessapp%2F&tabs=timeline&width=300&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="" height="" style="border:none;overflow:auto" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" id="fbIframe"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fs10fitnessapp%2F&width=147&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId" width="147" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <div class="section6-main-container3">
-                    <a class="twitter-timeline" href="https://twitter.com/S10_fit?ref_src=twsrc%5Etfw" width="300" height="350" >Tweets by S10_fit</a> 
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://twitter.com/S10_fit?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @S10_fit</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://twitter.com/intent/tweet?screen_name=S10_fit&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @S10_fit</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
         </section>
@@ -589,7 +575,9 @@ function googleTranslateElementInit() {
         $(document).ready(function () {
 
             // Activate Carousel
-            $("#myCarousel").carousel();
+            $("#myCarousel").carousel({
+                interval: 10000
+            });
             // Enable Carousel Indicators
             $(".item1").click(function () {
                 $("#myCarousel").carousel(0);
