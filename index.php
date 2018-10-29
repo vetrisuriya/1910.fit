@@ -255,8 +255,38 @@
         </section>
 
         <style>
+        .delay-0-5s {
+            animation-delay: .5s;
+        }
         .delay-1s {
             animation-delay: 1s;
+        }
+        .delay-1-5s {
+            animation-delay: 1.5s;
+        }
+        .delay-2-5s {
+            animation-delay: 2.5s;
+        }
+        .delay-3-5s {
+            animation-delay: 3.5s;
+        }
+        .delay-4-5s {
+            animation-delay: 3.5s;
+        }
+        .delay-5-5s {
+            animation-delay: 3.5s;
+        }
+        .delay-6s {
+            animation-delay: 3.5s;
+        }
+        .delay-6-5s {
+            animation-delay: 3.5s;
+        }
+        .delay-7s {
+            animation-delay: 3.5s;
+        }
+        .delay-7-5s {
+            animation-delay: 3.5s;
         }
         </style>
 
@@ -448,37 +478,34 @@
                                 With 160 exercisers to work every muscle in your body S10.fit programs has simple yet amazingly effective regime to get you into the best shape of your life.
                             </div>
                             <div class="content">
-                                <div class="inner row">
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="card">
-                                            <div class="card-block">
-                                                <h4 class="card-title text-center">Suitable for everyone</h4>
-                                                <p class="card-text">Plan for everyone - Male, Female, Children , Adult and every level - Sedentary, Active, Sports</p>  
-                                            </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 first-parent-column">
+                                        <div class="inner">
+                                            <h3 class="">Suitable for everyone</h3>
+                                            <p class="">Plan for everyone - Male, Female, Children, Adult and every level - Sedentary, Active, Sports</p>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="card">
-                                            <div class="card-block">
-                                                <h4 class="card-title text-center">Rapid results</h4>
-                                                <p class="card-text">Get the right workout for your goal and activity level by just working out for 30 minutes 4 days a week</p>  
+                                    <div class="col-md-6 col-sm-6 col-xs-12 second-parent-column">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 second-parent-inner1-column">
+                                            <div class="inner">
+                                                <h3 class="">Rapid results</h3>
+                                                <p class="">Get the right workout for your goal and activity level by just working out for 30 minutes 4 days a week</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="card">
-                                            <div class="card-block">
-                                                <h4 class="card-title text-center">Convenience of home</h4>
-                                                <p class="card-text">No gym, no coaches and no equipments simple body weight exercises that you can perform anywhere.</p>  
+                                        <div class="col-md-12 col-sm-12 col-xs-12 second-parent-inner2-column">
+                                            <div class="col-md-6 col-sm-6 col-xs-6 second-parent-inner2-subinner1-column">
+                                                <div class="inner">
+                                                    <h3 class="">Convenience of home</h3>
+                                                    <p class="">No gym, no coaches and no equipments simple body weight exercises that you can perform anywhere.</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="card">
-                                            <div class="card-block">
-                                                <h4 class="card-title text-center">Safe and Effective</h4>
-                                                <p class="card-text">Prevent injuries, build muscle and burn visceral fat</p>  
+                                            <div class="col-md-6 col-sm-6 col-xs-6 second-parent-inner2-subinner2-column">
+                                                <div class="inner">
+                                                    <h3 class="">Safe and Effective</h3>
+                                                    <p class="">Prevent injuries, build muscle and burn visceral fat</p>
+                                                </div>
                                             </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -555,11 +582,13 @@
 
     </div>
 
-    <div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', multilanguagePage: true}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', multilanguagePage: true}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
     <?php include("inc/scripts.php"); ?>
@@ -573,6 +602,12 @@ function googleTranslateElementInit() {
 
     <script>
         $(document).ready(function () {
+
+            var scrollTop = $(window).scrollTop();
+            var elementOffset = $('section.section5').offset().top;
+            var currentElementOffset = (elementOffset - scrollTop);
+            animateExerciseResult(currentElementOffset);
+
 
             // Activate Carousel
             $("#myCarousel").carousel({
@@ -635,6 +670,31 @@ function googleTranslateElementInit() {
                 $("#myCarousel1").carousel("next");
             });
 
+
+
+            $(window).bind('scroll', function() {
+                var scrollTop = $(window).scrollTop();
+                var elementOffset = $('section.section5').offset().top;
+                var currentElementOffset = (elementOffset - scrollTop);
+
+                animateExerciseResult(currentElementOffset);
+            });
+            
+
+            function animateExerciseResult(val) {
+                if(val < 0)
+                {
+                    $(".first-parent-column h3").attr("class", "animated fadeInLeft delay-0-5s");
+                    $(".first-parent-column p").attr("class", "animated fadeInLeft delay-1s");
+                    $(".second-parent-inner1-column h3").attr("class", "animated fadeInRight delay-1-5s");
+                    $(".second-parent-inner1-column p").attr("class", "animated fadeInRight delay-2s");
+                    $(".second-parent-inner2-subinner1-column h3").attr("class", "animated fadeInUp delay-2-5s");
+                    $(".second-parent-inner2-subinner1-column p").attr("class", "animated fadeInUp delay-3s");
+                    $(".second-parent-inner2-subinner2-column h3").attr("class", "animated fadeInDown delay-3-5s");
+                    $(".second-parent-inner2-subinner2-column p").attr("class", "animated fadeInDown delay-4s");
+                }
+
+            }
         });
 
     </script>

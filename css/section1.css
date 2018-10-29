@@ -185,12 +185,12 @@ section.section1 .parent-container2 .row > div {
     padding: 0px;
 }
 .section1-main-container1 .inner {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    height: 100%;
-    width: 100%;
-    width: fit-content; 
-    margin: 0px auto;
+    width: fit-content;
 }
 .section1-main-container1 .inner a.animate
 {
