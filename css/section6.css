@@ -18,99 +18,100 @@ section.section6 .parent-container1 {
     margin: 0px;
     padding: 0px;
 }
-.section6-main-container1 {
+section.section6 .parent-container1 div.inner {
     width: 96%;
-    margin: .5% auto;
-    height: 24%;
-}
-.section6-main-container1 .blog-inner {
     height: 100%;
-}
-.section6-main-container1 .blog-inner1 {
-    height: 12%;
-    font-size: 100%;
-    text-align: center;
-    border: 1px solid var(--fit-orange-dark);
-    color: var(--fit-orange-dark);
-    position: relative;
-}
-.section6-main-container1 .blog-inner1 div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.section6-main-container1 .blog-inner2 {
-    overflow: auto;
-    height: calc(100% - 12%);
-    border: 1px solid var(--fit-orange-dark);
-    border-top: unset;
-}
-.section6-main-container1 .blog-inner2 > div {
+    margin: 0% auto;
     padding: 0px;
 }
-.section6-main-container1 .blog-inner2 .blog {
-    padding: 10px;
-    border-bottom: 1px solid var(--fit-orange-dark);
+section.section6 .parent-container1 div.inner div.card-parent {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 30%;
+    width: 100%;
+    margin: 4% auto;
 }
-.section6-main-container1 .blog-inner2 .blog .blogTitle {
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
+section.section6 .parent-container1 div.inner div.card-parent .card {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
 }
-.section6-main-container1 .blog-inner2 .blog .blogDesc {
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-.section6-main-container1 .blog-inner2 .blog .blogReadMore a {
-    color: var(--fit-orange-light);
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.section6-main-container1 .blog-inner2::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-    background-color: #F5F5F5;
-}
-.section6-main-container1 .blog-inner2::-webkit-scrollbar
-{
-    width: 10px;
-    background-color: #F5F5F5;
-}
-.section6-main-container1 .blog-inner2::-webkit-scrollbar-thumb
-{
-    background-color: #FFF;
-    background-image: -webkit-gradient(linear,
-                                       40% 0%,
-                                       75% 84%,
-                                       from(var(--fit-orange-dark)),
-                                       to(var(--fit-orange-dark)),
-                                       color-stop(.6,var(--fit-orange-dark)))
-}
-
-
-.section6-main-container1, .section6-main-container2,  .section6-main-container3, .section6-main-container4 {
+section.section6 .parent-container1 div.inner div.card-parent .card .wrapper {
+    background-color: #fff;
+    min-height: 100%;
     position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
-
-
-.section6-main-container2 {
-    width: 96%;
-    margin: .5% auto;
-    height: 24%;
+section.section6 .parent-container1 div.inner div.card-parent .card .wrapper1 {
+    background: url(https://cdn.dribbble.com/users/255/screenshots/3315667/yala-neueud.png) center/cover no-repeat;
 }
-.section6-main-container3 {
-    width: 96%;
-    margin: .5% auto;
-    height: 24%;
+section.section6 .parent-container1 div.inner div.card-parent .card .wrapper2 {
+    background: url(https://cdn.dribbble.com/users/2512668/screenshots/5044015/emails_001_07_4x.jpg) center/cover no-repeat;
 }
-.section6-main-container4 {
-    width: 96%;
-    margin: .5% auto;
-    height: 24%;
+section.section6 .parent-container1 div.inner div.card-parent .card .wrapper3 {
+    background: url(https://cdn.dribbble.com/users/2512668/screenshots/5060390/artificial_intelligence_in_the_phone_4x.jpg) center/cover no-repeat;
 }
+section.section6 .parent-container1 div.inner div.card-parent .card .wrapper:hover .data {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    -webkit-transform: translateY(calc(70px + 4em));
+            transform: translateY(calc(70px + 4em));
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data .content .title {
+    margin-top: 10px;
+    font-size: 2.1em;
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data .content .title a {
+    color: #fff;
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data .content .text {
+    margin: 0;
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data .content .button {
+    display: block;
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    position: relative;
+    font-weight: normal;
+    letter-spacing: .8px;
+    outline: 1px solid #c7333399;
+    outline-offset: 10px;
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data .content .button::after {
+    content: '\2192';
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    transition: all 0.3s;
+}
+section.section6 .parent-container1 div.inner div.card-parent .card .data .content .button:hover::after {
+    -webkit-transform: translate(5px, -50%);
+            transform: translate(5px, -50%);
+    opacity: 1;
+}
+  
 
 
 
@@ -120,32 +121,16 @@ section.section6 .parent-container1 {
     section.section6 {
         height: var(--section6-576);
     }
-    section.section6 .parent-container1 {
+    section.section6 .parent-container1 div.inner div.card-parent {
+        padding: 10px;
         height: 100%;
-        margin: 0% auto;
+        margin: unset;
     }
-    .section6-main-container1 {
-        width: 48%;
-        margin: 1% 1%;
-        height: 48%;
-    }
-    .section6-main-container1 .blog-inner1 {
-        font-size: 130%;
-    }
-    .section6-main-container2 {
-        width: 48%;
-        margin: 1% 1%;
-        height: 48%;
-    }
-    .section6-main-container3 {
-        width: 48%;
-        margin: 1% 1%;
-        height: 48%;
-    }
-    .section6-main-container4 {
-        width: 48%;
-        margin: 1% 1%;
-        height: 48%;
+    section.section6 .parent-container1 div.inner {
+        width: 100%;
+        height: 70%;
+        margin: 5% auto;
+        display: flex;
     }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -153,32 +138,15 @@ section.section6 .parent-container1 {
     section.section6 {
         height: var(--section6-768);
     }
-    section.section6 .parent-container1 {
-        height: 80%;
+    section.section6 .parent-container1 div.inner div.card-parent {
+        height: 100%;
+        margin: unset;
+    }
+    section.section6 .parent-container1 div.inner {
+        width: 100%;
+        height: 70%;
         margin: 5% auto;
-    }
-    .section6-main-container1 {
-        width: 25%;
-        margin: 0%;
-        height: 100%;
-    }
-    .section6-main-container1 .blog-inner1 {
-        font-size: 90%;
-    }
-    .section6-main-container2 {
-        width: 25%;
-        margin: 0%;
-        height: 100%;
-    }
-    .section6-main-container3 {
-        width: 25%;
-        margin: 0%;
-        height: 100%;
-    }
-    .section6-main-container4 {
-        width: 25%;
-        margin: 0%;
-        height: 100%;
+        display: flex;
     }
 }
 /* Large devices (desktops, 992px and up) */
@@ -186,32 +154,15 @@ section.section6 .parent-container1 {
     section.section6 {
         height: var(--section6-992);
     }
-    section.section6 .parent-container1 {
-        height: 80%;
+    section.section6 .parent-container1 div.inner div.card-parent {
+        height: 100%;
+        margin: unset;
+    }
+    section.section6 .parent-container1 div.inner {
+        width: 90%;
+        height: 70%;
         margin: 5% auto;
-    }
-    .section6-main-container1 {
-        width: 24%;
-        margin: 0% .5%;
-        height: 100%;
-    }
-    .section6-main-container1 .blog-inner1 {
-        font-size: 110%;
-    }
-    .section6-main-container2 {
-        width: 24%;
-        margin: 0% .5%;
-        height: 100%;
-    }
-    .section6-main-container3 {
-        width: 24%;
-        margin: 0% .5%;
-        height: 100%;
-    }
-    .section6-main-container4 {
-        width: 24%;
-        margin: 0% .5%;
-        height: 100%;
+        display: flex;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */
@@ -219,31 +170,14 @@ section.section6 .parent-container1 {
     section.section6 {
         height: var(--section6-1200);
     }
-    section.section6 .parent-container1 {
-        height: 80%;
+    section.section6 .parent-container1 div.inner div.card-parent {
+        height: 100%;
+        margin: unset;
+    }
+    section.section6 .parent-container1 div.inner {
+        width: 80%;
+        height: 70%;
         margin: 5% auto;
-    }
-    .section6-main-container1 {
-        width: 23%;
-        margin: 0% 1%;
-        height: 100%;
-    }
-    .section6-main-container1 .blog-inner1 {
-        font-size: 130%;
-    }
-    .section6-main-container2 {
-        width: 23%;
-        margin: 0% 1%;
-        height: 100%;
-    }
-    .section6-main-container3 {
-        width: 23%;
-        margin: 0% 1%;
-        height: 100%;
-    }
-    .section6-main-container4 {
-        width: 23%;
-        margin: 0% 1%;
-        height: 100%;
+        display: flex;
     }
 }

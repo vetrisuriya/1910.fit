@@ -526,56 +526,59 @@
         <!-- section 6 -->
         <section class="section6">
             <div class="row parent-container1">
-                <div class="section6-main-container1">
-                    <div class="blog-inner">
-                        <div class="blog-inner1"><div>Recent Blogs</div></div>
-                        <div class="blog-inner2">
-                            <div class="col-md-12">
-                                <div class="blog">
-                                    <div class="blogTitle">What is Lorem Ipsum?</div>
-                                    <div class="blogDesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                    <div class="blogReadMore"><a href="#!">Read More</a></div>
+                
+                <div class="inner">
+                    <div class="card-parent col-md-4 col-sm-4 col-xs-12">
+                        <div class="example card">
+                            <div class="wrapper wrapper1">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="title"><a href="#!">What S10.fit is ?</a></h1>
+                                        <p class="text">It improves the health, fitness & Performance of a person.</p>
+                                        <p class="text">It is a life long program to avoid disease live long, be younger and perform better.</p>
+                                        <br>
+                                        <a href="./get_started.php" class="button">Signup for 1 month free trial</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="blog">
-                                    <div class="blogTitle">What is Lorem Ipsum?</div>
-                                    <div class="blogDesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
-                                    <div class="blogReadMore"><a href="#!">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="card-parent col-md-4 col-sm-4 col-xs-12">
+                        <div class="example card">
+                            <div class="wrapper wrapper2">
+                                <div class="data">
+                                    <div class="content">
+                                        <a href="./corporate.php" class="button">Corporate fitness program</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="blog">
-                                    <div class="blogTitle">What is Lorem Ipsum?</div>
-                                    <div class="blogDesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                    <div class="blogReadMore"><a href="#!">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="card-parent col-md-4 col-sm-4 col-xs-12">
+                        <div class="example card">
+                            <div class="wrapper wrapper3">
+                                <div class="data">
+                                    <div class="content">
+                                        <h1 class="title"><a href="#!">What S10.fit is not ?</a></h1>
+                                        <p class="text">It is not a crash weight reduction program.</p>
+                                        <p class="text">It follow scientific norms and do not push for more 1- 1.5 kgs of weight changes per month.</p>
+                                        <br>
+                                        <a href="./partner.php" class="button">Partnership program</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="blog" style="border: unset;">
-                                    <div class="blogTitle">What is Lorem Ipsum?</div>
-                                    <div class="blogDesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
-                                    <div class="blogReadMore"><a href="#!">Read More</a></div>
-                                </div>
-                            </div>
-                            <br>
                         </div>
                     </div>
                 </div>
-                <div class="section6-main-container4">
-                    <a href="https://instawidget.net/v/user/s10.fit_app" id="link-256f0622098b2ae7053f6bb4bbdf24036d0c6d266543e2c58f5a23b19537ff05">@s10.fit_app</a>
-                    <script src="https://instawidget.net/js/instawidget.js?u=256f0622098b2ae7053f6bb4bbdf24036d0c6d266543e2c58f5a23b19537ff05&width=px"></script>
-                </div>
-                <div class="section6-main-container2">
-                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fs10fitnessapp%2F&width=147&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId" width="147" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                </div>
-                <div class="section6-main-container3">
-                    <a href="https://twitter.com/S10_fit?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @S10_fit</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    <a href="https://twitter.com/intent/tweet?screen_name=S10_fit&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @S10_fit</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+
             </div>
         </section>
 
+        <style>
+        section.section8.mt-5 {
+            margin: unset !important;
+        }
+        </style>
 
         <!-- footer -->
         <?php include("inc/footer.php"); ?>
