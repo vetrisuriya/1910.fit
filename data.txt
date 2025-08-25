@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Offline XPath Locator & POM + API Studio</title>
+    <style>
+        :root {
+            --bg: #0f1217;
+            --panel: #151a21;
+            --panel2: #171e27;
+            --chip: #202734;
+            --txt: #e9eef5;
+            --dim: #9db0c5;
+            --brd: #273243;
+            --accent: #7c5cff;
+            --ok: #19c37d;
+            --warn: #ffbf47;
+            --bad: #ff4d4f;
+            --ed-bg: #fbfcfe;
+            --ed-brd: #dfe6ee;
+            --ed-txt: #0f172a;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--txt);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto
+        }
+
+        .app {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            height: 100%
+        }
+
+        /* Sidebar */
+        .side {
+            background: linear-gradient(180deg, #0f1217 0, #0f1217 60%, #0b0e13 100%);
+            border-right: 1px solid var(--brd);
+            padding: 18px 16px;
+            overflow: auto
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            margin-bottom: 14px
+        }
+
+        .beacon {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, var(--accent), #563bff);
+            box-shadow: 0 0 10px var(--accent)
+        }
+
+        .section {
+            margin: 16px 0 8px;
+            color: var(--dim);
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        .btn {
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            background: var(--panel);
+            border: 1px solid var(--brd);
+            border-radius: 10px;
+            padding: 10px 12px;
+            color: var(--txt);
+            font-weight: 600;
+            margin-bottom: 8px;
+            transition: .15s
+        }
+
+        .btn:hover {
+            background: var(--panel2);
+            transform: translateY(-1px)
+        }
+
+        .btn.primary {
+            background: linear-gradient(180deg, var(--accent), #6047ff);
+            border-color: #5b49f2
+        }
+
+        .btn.danger {
+            background: linear-gradient(180deg, #ff4d4f, #e13b3e);
+            border-color: #e13b3e
+        }
+
+        .pill {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            background: var(--chip);
+            border: 1px solid var(--brd);
+            border-radius: 999px;
+            padding: 8px 10px;
+            width: max-content;
+            color: var(--dim);
+            font-size: 12px
+        }
+
+        .switch {
+            display: flex;
+            gap: 8px
+        }
+
+        .switch .sw {
+            padding: 8px 12px;
+            border: 1px solid var(--brd);
+            border-radius: 10px;
+            background: var(--panel);
+            cursor: pointer
+        }
+
+        .sw.active {
+            outline: 2px solid rgba(124, 92, 255, .35)
+        }
+
+        /* Main */
+        .main {
+            display: grid;
+            grid-template-rows: auto 1fr auto
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--brd);
+            background: var(--panel);
+            position: sticky;
+            top: 0;
+            z-index: 5
+        }
+
+        .toolbar .title {
+            font-weight: 800
+        }
+
+        .hint {
+            color: var(--dim);
+            font-size: 12px;
+            margin-left: auto
+        }
+
+        .mode-chips {
+            display: flex;
+            gap: 8px
+        }
+
+        .mode-chip {
+            padding: 6px 10px;
+            border-radius: 8px;
+            background: #0f1419;
+            border: 1px solid var(--brd);
+            cursor: pointer;
+            color: var(--dim);
+            font-weight: 700
+        }
+
+        .mode-chip.active {
+            background: linear-gradient(90deg, var(--accent), #5a48f0);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(90, 72, 240, .12)
+        }
+
+        .workspace {
+            display: grid;
+            grid-template-columns: 48% 52%;
+            gap: 14px;
+            padding: 14px;
+            overflow: auto
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--brd);
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .35)
+        }
+
+        .card .head {
+            background: var(--panel2);
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--brd);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700
+        }
+
+        .card .body {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-height: 140px
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center
+        }
+
+        select,
+        input[type="text"] {
+            background: var(--panel2);
+            border: 1px solid var(--brd);
+            border-radius: 10px;
+            color: var(--txt);
+            padding: 8px 10px
+        }
+
+        textarea.ed {
+            background: var(--ed-bg);
+            border: 1px solid var(--ed-brd);
+            border-radius: 12px;
+            color: var(--ed-txt);
+            padding: 10px;
+            min-height: 130px;
+            font-family: ui-monospace, Menlo, Consolas, monospace
+        }
+
+        iframe#preview {
+            width: 100%;
+            height: 360px;
+            background: #fff;
+            border: none;
+            border-radius: 8px
+        }
+
+        .drop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 56px;
+            border: 2px dashed #3a475a;
+            border-radius: 12px;
+            color: var(--dim)
+        }
+
+        .chip-tabs {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            background: var(--panel);
+            border-bottom: 1px solid var(--brd);
+            padding: 8px 12px
+        }
+
+        .chip {
+            padding: 8px 12px;
+            border: 1px solid var(--brd);
+            border-radius: 999px;
+            background: #1a2230;
+            color: #b8c6d9;
+            font-size: 12px;
+            cursor: pointer
+        }
+
+        .chip.active {
+            color: #fff;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(124, 92, 255, .25) inset
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            max-height: 280px;
+            overflow: auto;
+            background: var(--ed-bg);
+            border: 1px solid var(--ed-brd);
+            border-radius: 12px;
+            padding: 8px
+        }
+
+        .loc-row {
+            background: #fff;
+            border: 1px solid #e6ecf5;
+            border-radius: 8px;
+            padding: 8px 10px;
+            color: #0f172a;
+            cursor: pointer;
+            display: flex;
+            align-items: center
+        }
+
+        .loc-row:hover {
+            background: #f5f8ff
+        }
+
+        .badge {
+            font-size: 11px;
+            background: #eef2ff;
+            border: 1px solid #d8e1ff;
+            border-radius: 999px;
+            padding: 2px 8px;
+            margin-right: 8px;
+            color: #1f2b46
+        }
+
+        .footer {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 12px 16px;
+            border-top: 1px solid var(--brd);
+            background: var(--panel)
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            background: #131a24;
+            border: 1px solid #2a3648;
+            color: #cfe3ff;
+            padding: 10px 12px;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: .15s
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .mono {
+            font-family: ui-monospace, Menlo, Consolas, monospace
+        }
+
+        .small {
+            font-size: 12px;
+            color: var(--dim)
+        }
+
+        .hidden {
+            display: none
+        }
+
+        /* responsive tweaks */
+        @media (max-width:980px) {
+            .workspace {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="side">
+            <div class="brand"><span class="beacon"></span> Offline XPath Studio</div>
+            <div class="section">Workspace</div>
+            <button id="btnPaste" class="btn">Paste HTML</button>
+            <button id="btnOpenFile" class="btn">Open .html file</button>
+            <div class="pill">Drag & drop file into preview</div>
+            <button id="btnClear" class="btn danger">Clear</button>
+            <button id="btnExport" class="btn">Export (locators + checks)</button>
+
+            <div class="section">Locator Panels</div>
+            <button class="btn" data-panel="basic">Basic</button>
+            <button class="btn" data-panel="wildcards">Wildcards</button>
+            <button class="btn" data-panel="axes">Axes</button>
+            <button class="btn" data-panel="functions">Functions & Relative</button>
+            <button class="btn" data-panel="sf">Salesforce / LWC / PEGA</button>
+
+            <div class="section">POM & Steps</div>
+            <div class="switch">
+                <div class="sw active" data-fw="selenium">Selenium</div>
+                <div class="sw" data-fw="playwright">Playwright</div>
+            </div>
+            <div style="height:8px"></div>
+            <div class="switch">
+                <div class="sw active" data-runner="testng">Maven + TestNG</div>
+                <div class="sw" data-runner="cucumber">Maven + Cucumber</div>
+            </div>
+            <div style="height:8px"></div>
+            <div class="switch">
+                <div class="sw active" data-lang="java">Java</div>
+                <div class="sw" data-lang="javascript">JavaScript</div>
+                <div class="sw" data-lang="python">Python</div>
+                <div class="sw" data-lang="typescript">TypeScript</div>
+            </div>
+            <button id="btnGenPOM" class="btn primary" style="margin-top:10px">Generate POM + Steps</button>
+            <button id="btnDownloadPOM" class="btn">Download POM file</button>
+            <button id="btnDownloadSteps" class="btn">Download Steps file</button>
+            <button id="btnZipAll" class="btn">Download ZIP (All)</button>
+
+        </aside> <!-- Main -->
+        <main class="main">
+            <div class="toolbar">
+                <div class="title">1) Paste/Open HTML → 2) Pick a locator panel → 3) Copy rows → 4) Generate POM + Steps
+                </div>
+                <div class="mode-chips">
+                    <div id="modePOM" class="mode-chip active">POM Studio</div>
+                    <div id="modeAPI" class="mode-chip">API Studio</div>
+                </div>
+                <div class="hint">Row click = copy • Priority: name → label → placeholder</div>
+            </div>
+            <div class="workspace">
+                <!-- Left: Paste + Preview (will morph between POM and API modes) -->
+                <section id="leftCard" class="card">
+                    <div class="head" id="leftHead">Paste HTML</div>
+                    <div class="body" id="leftBody">
+                        <textarea id="pasteBox" class="ed"
+                            placeholder="Paste full page HTML here (scripts optional). Then click 'Render Preview'."></textarea>
+                        <div class="row">
+                            <button id="btnRender" class="btn primary" style="width:auto">Render Preview</button>
+                            <div class="pill mono">shadow DOM supported at runtime</div>
+                        </div>
+                        <div class="head" style="margin:6px -12px 0;border-radius:10px">Preview</div>
+                        <div class="drop" id="dropZone">Drop .html here</div>
+                        <iframe id="preview" sandbox="allow-same-origin allow-forms allow-scripts"></iframe>
+                    </div>
+                </section>
+
+                <!-- Right: Locators + POM (or API code / response) -->
+                <section id="rightCard" class="card">
+                    <div class="head">Locators & Code</div>
+                    <div class="body" id="rightBody">
+                        <div id="pomPanel">
+                            <div class="chip-tabs">
+                                <div class="chip active" data-paneltab="basic">Basic</div>
+                                <div class="chip" data-paneltab="wildcards">Wildcards</div>
+                                <div class="chip" data-paneltab="axes">Axes</div>
+                                <div class="chip" data-paneltab="functions">Functions</div>
+                                <div class="chip" data-paneltab="sf">Salesforce</div>
+                            </div>
+                            <div id="locList" class="list"></div>
+
+                            <div class="head" style="margin:8px -12px 0;border-radius:10px">Output</div>
+                            <textarea id="output" class="ed mono"
+                                placeholder="POM / Steps / Export text will appear here…"></textarea>
+                        </div>
+
+                        <div id="apiPanel" class="hidden">
+                            <div class="row" style="align-items:flex-end">
+                                <div style="flex:1">
+                                    <label class="small">Method</label>
+                                    <select id="apiMethod">
+                                        <option>GET</option>
+                                        <option>POST</option>
+                                        <option>PUT</option>
+                                        <option>DELETE</option>
+                                    </select>
+                                </div>
+                                <div style="flex:3">
+                                    <label class="small">Endpoint</label>
+                                    <input id="apiUrl" type="text" placeholder="https://api.example.com/..." />
+                                </div>
+                            </div>
+
+                            <div style="display:flex;gap:10px">
+                                <div style="flex:1">
+                                    <label class="small">Headers (JSON)</label>
+                                    <textarea id="apiHeaders" class="ed"
+                                        style="min-height:80px">{ "Content-Type":"application/json" }</textarea>
+                                </div>
+                                <div style="flex:1">
+                                    <label class="small">Body (JSON)</label>
+                                    <textarea id="apiBody" class="ed" style="min-height:80px">{}</textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <button id="btnGenerateApi" class="btn primary">Generate Code</button>
+                                <button id="btnPasteCurl" class="btn">Paste cURL → Parse</button>
+                                <button id="btnCopyApiCode" class="btn">Copy Code</button>
+                            </div>
+
+                            <div class="head" style="margin:8px -12px 0;border-radius:10px">Generated API Code</div>
+                            <textarea id="apiCode" class="ed mono"
+                                placeholder="RestAssured / Playwright API code will appear here..."></textarea>
+
+                            <div class="head" style="margin:8px -12px 0;border-radius:10px">Response / Paste here</div>
+                            <textarea id="apiResponse" class="ed mono"
+                                placeholder="Paste response JSON here to visualize or to include in tests..."></textarea>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pill">Copy any locator by clicking its row</div>
+                <div class="pill">Export includes isVisible / isClickable / isEnabled / isDisabled with waits</div>
+            </div>
+
+        </main>
+    </div><input id="hiddenFile" type="file" accept=".html,.htm,.xhtml,.txt" hidden />
+    <div id="toast" class="toast">Copied ✔</div>
+    <script>
+        // --- Mode switching (POM <-> API) ---
+        const modePOM = document.getElementById('modePOM');
+        const modeAPI = document.getElementById('modeAPI');
+        const pomPanel = document.getElementById('pomPanel');
+        const apiPanel = document.getElementById('apiPanel');
+        const leftHead = document.getElementById('leftHead');
+        const leftBody = document.getElementById('leftBody');
+        modePOM.addEventListener('click', () => setMode('pom'));
+        modeAPI.addEventListener('click', () => setMode('api'));
+        function setMode(m) {
+            modePOM.classList.remove('active'); modeAPI.classList.remove('active');
+            if (m === 'pom') { modePOM.classList.add('active'); pomPanel.classList.remove('hidden'); apiPanel.classList.add('hidden'); leftHead.textContent = 'Paste HTML'; }
+            else { modeAPI.classList.add('active'); pomPanel.classList.add('hidden'); apiPanel.classList.remove('hidden'); leftHead.textContent = 'API Request / Preview'; }
+        }
+
+        // --- Basic toast ---
+        function showToast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1600); }
+
+        // --- File open / drop / render preview ---
+        const hiddenFile = document.getElementById('hiddenFile');
+        const btnOpenFile = document.getElementById('btnOpenFile');
+        const dropZone = document.getElementById('dropZone');
+        const preview = document.getElementById('preview');
+        btnOpenFile.addEventListener('click', () => hiddenFile.click());
+        hiddenFile.addEventListener('change', e => {
+            const f = e.target.files[0]; if (!f) return; const reader = new FileReader(); reader.onload = ev => { document.getElementById('pasteBox').value = ev.target.result; renderPreview(); }; reader.readAsText(f);
+        });
+
+        // drag drop
+        ['dragenter', 'dragover'].forEach(ev => dropZone.addEventListener(ev, e => { e.preventDefault(); dropZone.style.borderColor = '#5a48f0'; }));
+        ['dragleave', 'drop'].forEach(ev => dropZone.addEventListener(ev, e => { e.preventDefault(); dropZone.style.borderColor = '#3a475a'; }));
+        dropZone.addEventListener('drop', e => { const f = e.dataTransfer.files[0]; if (!f) return; const reader = new FileReader(); reader.onload = ev => { document.getElementById('pasteBox').value = ev.target.result; renderPreview(); }; reader.readAsText(f); });
+
+        // render preview
+        const btnRender = document.getElementById('btnRender');
+        btnRender.addEventListener('click', renderPreview);
+        function renderPreview() { const html = document.getElementById('pasteBox').value || '<body><h3>Paste HTML and click Render Preview</h3></body>'; preview.srcdoc = html; showToast('Preview rendered'); }
+
+        // --- Simple locator extraction (placeholder) ---
+        // This is a light placeholder: extracts visible inputs/buttons/links from pasted HTML by parsing the text.
+        function extractLocators() {
+            const html = document.getElementById('pasteBox').value; if (!html) { document.getElementById('locList').innerHTML = ''; return; }
+            try {
+                const parser = new DOMParser(); const doc = parser.parseFromString(html, 'text/html');
+                const elements = [...doc.querySelectorAll('input,button,a,select,textarea')];
+                const list = document.getElementById('locList'); list.innerHTML = '';
+                elements.forEach(el => {
+                    const type = el.tagName.toLowerCase(); const text = (el.value || el.getAttribute('placeholder') || el.getAttribute('aria-label') || el.textContent || '').trim();
+                    const xpath = generateSimpleXPath(el);
+                    const row = document.createElement('div'); row.className = 'loc-row'; row.innerHTML = `<div style="flex:1"><span class="badge">${type}</span> ${text || '(no text)'}</div><div class="small mono">${xpath}</div>`;
+                    row.addEventListener('click', () => { navigator.clipboard.writeText(xpath); showToast('Copied XPath'); });
+                    list.appendChild(row);
+                });
+            } catch (e) { console.error(e); }
+        }
+        function generateSimpleXPath(el) { // best-effort simple xpath by attributes
+            const tag = el.tagName.toLowerCase(); if (el.id) return `//*[@id=\"${el.id}\"]`;
+            if (el.getAttribute('name')) return `//${tag}[@name=\"${el.getAttribute('name')}\"]`;
+            const txt = (el.getAttribute('placeholder') || el.getAttribute('aria-label') || el.value || el.textContent || '').trim(); if (txt) return `//${tag}[contains(normalize-space(.),\"${txt.trim().replace(/\"/g, '\\\"')}\")]`;
+            return `//${tag}[1]`;
+        }
+
+        // auto extract on render
+        btnRender.addEventListener('click', () => { setTimeout(extractLocators, 200); });
+
+        // --- API panel: parse cURL, generate code, copy ---
+        const btnPasteCurl = document.getElementById('btnPasteCurl');
+        const btnGenerateApi = document.getElementById('btnGenerateApi');
+        const btnCopyApiCode = document.getElementById('btnCopyApiCode');
+        btnPasteCurl.addEventListener('click', async () => {
+            try { const txt = await navigator.clipboard.readText(); if (!txt) return showToast('Clipboard empty'); parseCurl(txt); showToast('Parsed cURL'); } catch (e) { showToast('Unable to read clipboard'); }
+        });
+
+        function parseCurl(curl) { // naive parser: extracts method, url, headers, data
+            try {
+                const methodMatch = curl.match(/-X\s+(GET|POST|PUT|DELETE|PATCH)/i);
+                const urlMatch = curl.match(/curl\s+'?"?([^'"\\s]+)/i);
+                const headerRegex = /-H\s+'([^:]+):\s*([^']+)'/g;
+                const dataMatch = curl.match(/--data-raw\s+'([^']+)'|--data\s+'([^']+)'/i);
+                const headers = {};
+                let h; while ((h = headerRegex.exec(curl)) !== null) { headers[h[1]] = h[2]; }
+                if (methodMatch) document.getElementById('apiMethod').value = methodMatch[1].toUpperCase();
+                if (urlMatch) document.getElementById('apiUrl').value = urlMatch[1];
+                if (dataMatch) document.getElementById('apiBody').value = dataMatch[1] || dataMatch[2] || '';
+                if (Object.keys(headers).length) document.getElementById('apiHeaders').value = JSON.stringify(headers, null, 2);
+            } catch (e) { console.error(e); }
+        }
+
+        btnGenerateApi.addEventListener('click', () => { generateApiCode(); showToast('API code generated'); });
+        btnCopyApiCode.addEventListener('click', async () => { const code = document.getElementById('apiCode').value; await navigator.clipboard.writeText(code); showToast('Code copied'); });
+
+        function generateApiCode() {
+            const method = document.getElementById('apiMethod').value; const url = document.getElementById('apiUrl').value; let headersText = document.getElementById('apiHeaders').value; let body = document.getElementById('apiBody').value;
+            try { const headersObj = JSON.parse(headersText); headersText = JSON.stringify(headersObj, null, 2); } catch (e) { /* leave as-is */ }
+            const restAssured = `// RestAssured Example\ngiven()\n  .headers(${headersText})\n  .body(${body})\n.when()\n  .${method.toLowerCase()}("${url}")\n.then()\n  .statusCode(200);`;
+            const playwrightJava = `// Playwright Java API Example\nAPIRequestContext request = playwright.request().newContext();\nAPIResponse response = request.${method.toLowerCase()}("${url}", RequestOptions.create()\n    .setHeaders(${headersText})\n    .setData(${body}));\nSystem.out.println(response.text());`;
+            document.getElementById('apiCode').value = restAssured + "\n\n" + playwrightJava;
+        }
+
+        // --- copy output / generate POM buttons (placeholders) ---
+        document.getElementById('btnGenPOM').addEventListener('click', () => { const fw = document.querySelector('.sw[data-fw].active')?.dataset?.fw || 'selenium'; const lang = document.querySelector('.sw[data-lang].active')?.dataset?.lang || 'java'; document.getElementById('output').value = `// Generated POM (${fw}, ${lang})\n// (placeholder)\n`; showToast('POM generated (placeholder)'); });
+
+        // activate sidebar switches (visual only)
+        document.querySelectorAll('.sw').forEach(s => s.addEventListener('click', () => { document.querySelectorAll('.sw').forEach(x => x.classList.remove('active')); s.classList.add('active'); }));
+        // sidebar locator buttons simple handlers
+        document.querySelectorAll('.side .btn[data-panel]').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.chip').forEach(c => c.classList.remove('active')); const sel = b.dataset.panel; const chip = document.querySelector(`.chip[data-paneltab="${sel}"]`); if (chip) chip.classList.add('active'); showToast(sel + ' panel'); }));
+
+        // initial actions
+        setMode('pom');
+    </script>
+</body>
+</html>
